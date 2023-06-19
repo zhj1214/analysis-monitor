@@ -18,11 +18,14 @@ import { ELinstenerTypes } from './constant'
 
 const HandleWxAppEvents = {
   onLaunch(options: WechatMiniprogram.App.LaunchShowOption) {
+    // 1. 初始化sdk的钩子函数
     sdkOptions.appOnLaunch(options)
+    // 2. 组装数据
     const data: WxLifeCycleBreadcrumb = {
       path: options.path,
       query: options.query
     }
+    // 3. 添加到用户行为栈
     breadcrumb.push({
       category: breadcrumb.getCategory(BREADCRUMBTYPES.APP_ON_LAUNCH),
       type: BREADCRUMBTYPES.APP_ON_LAUNCH,

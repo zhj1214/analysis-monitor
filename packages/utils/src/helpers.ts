@@ -138,6 +138,7 @@ export function toStringAny(target: any, type: string): boolean {
 
 export function validateOption(target: any, targetName: string, expectType: string): boolean {
   if (typeofAny(target, expectType)) return true
+  if (target[targetName] && typeofAny(target[targetName], expectType)) return true
   typeof target !== 'undefined' && logger.error(`${targetName}期望传入${expectType}类型，目前是${typeof target}类型`)
   return false
 }

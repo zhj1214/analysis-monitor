@@ -9,6 +9,7 @@ type ReplaceCallback = (data: any) => void
 
 const handlers: { [key in EVENTTYPES]?: ReplaceCallback[] } = {}
 
+// 注册type到handlers中，形成订阅
 export function subscribeEvent(handler: ReplaceHandler): boolean {
   if (!handler || getFlag(handler.type)) return false
   setFlag(handler.type, true)
@@ -17,6 +18,7 @@ export function subscribeEvent(handler: ReplaceHandler): boolean {
   return true
 }
 
+// 订阅被触发的第一层进行捕获错误
 export function triggerHandlers(type: EVENTTYPES | WxEvents, data: any): void {
   if (!type || !handlers[type]) return
   handlers[type].forEach((callback) => {

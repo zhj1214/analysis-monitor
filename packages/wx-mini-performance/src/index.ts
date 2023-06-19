@@ -1,7 +1,7 @@
 import { isWxMiniEnv } from '@zyf2e/monitor-utils'
 import { initBatteryInfo, initMemoryWarning, initNetworkInfo, initWxHideReport, initWxPerformance, initWxNetwork } from './wx/index'
 import Store from './core/store'
-import { version } from '../package.json'
+// import { version } from '../package.json'
 import { WxPerformanceInitOptions } from './types/index'
 
 class WxPerformance {
@@ -26,7 +26,7 @@ class WxPerformance {
     } = options
 
     this.appId = appId
-    this.version = version
+    this.version = 'version'
 
     const store = new Store({ appId, report, immediately, ignoreUrl, maxBreadcrumbs })
     this.store = store

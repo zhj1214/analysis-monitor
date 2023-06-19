@@ -38,13 +38,13 @@ class Store extends Event {
 
   constructor(options: WxPerformanceInitOptions) {
     super()
-    const { appId, report, maxBreadcrumbs, immediately, ignoreUrl } = options
-    validateOption(appId, 'appId', 'string') && (this.appId = appId)
-    validateOption(maxBreadcrumbs, 'maxBreadcrumbs', 'number') && (this.maxBreadcrumbs = maxBreadcrumbs)
-    toStringValidateOption(ignoreUrl, 'ignoreUrl', '[object RegExp]') && (this.ignoreUrl = ignoreUrl)
-    validateOption(immediately, 'immediately', 'boolean') && (this.immediately = immediately)
+    // const { appId, report, maxBreadcrumbs, immediately, ignoreUrl } = options
+    validateOption(options.appId, 'appId', 'string') && (this.appId = options.appId)
+    validateOption(options.maxBreadcrumbs, 'maxBreadcrumbs', 'number') && (this.maxBreadcrumbs = options.maxBreadcrumbs)
+    toStringValidateOption(options.ignoreUrl, 'ignoreUrl', '[object RegExp]') && (this.ignoreUrl = options.ignoreUrl)
+    validateOption(options.immediately, 'immediately', 'boolean') && (this.immediately = options.immediately)
 
-    this.report = validateOption(report, 'report', 'function') ? report : noop
+    this.report = validateOption(options.report, 'report', 'function') ? options.report : noop
     this.stack = []
   }
 

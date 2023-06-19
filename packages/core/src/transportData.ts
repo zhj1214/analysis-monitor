@@ -45,12 +45,15 @@ export class TransportData {
     return _support.deviceInfo || {}
   }
   async beforePost(data: FinalReportType) {
+    // 不是埋点数据的话，创建错误id
     if (isReportDataType(data)) {
       const errorId = createErrorId(data, this.apikey)
       if (!errorId) return false
       data.errorId = errorId
     }
+    // 组装上传数据
     let transportData = this.getTransportData(data)
+    // 上传前的狗子函数
     if (typeof this.beforeDataReport === 'function') {
       transportData = await this.beforeDataReport(transportData)
       if (!transportData) return false
@@ -136,28 +139,29 @@ export class TransportData {
   }
 
   bindOptions(options: InitOptions = {}): void {
-    const {
-      dsn,
-      beforeDataReport,
-      apikey,
-      configReportXhr,
-      backTrackerId,
-      trackDsn,
-      trackKey,
-      configReportUrl,
-      useImgUpload,
-      configReportWxRequest
-    } = options
-    validateOption(apikey, 'apikey', 'string') && (this.apikey = apikey)
-    validateOption(trackKey, 'trackKey', 'string') && (this.trackKey = trackKey)
-    validateOption(dsn, 'dsn', 'string') && (this.errorDsn = dsn)
-    validateOption(trackDsn, 'trackDsn', 'string') && (this.trackDsn = trackDsn)
-    validateOption(useImgUpload, 'useImgUpload', 'boolean') && (this.useImgUpload = useImgUpload)
-    validateOption(beforeDataReport, 'beforeDataReport', 'function') && (this.beforeDataReport = beforeDataReport)
-    validateOption(configReportXhr, 'configReportXhr', 'function') && (this.configReportXhr = configReportXhr)
-    validateOption(backTrackerId, 'backTrackerId', 'function') && (this.backTrackerId = backTrackerId)
-    validateOption(configReportUrl, 'configReportUrl', 'function') && (this.configReportUrl = configReportUrl)
-    validateOption(configReportWxRequest, 'configReportWxRequest', 'function') && (this.configReportWxRequest = configReportWxRequest)
+    // const {
+    //   dsn,
+    //   beforeDataReport,
+    //   apikey,
+    //   configReportXhr,
+    //   backTrackerId,
+    //   trackDsn,
+    //   trackKey,
+    //   configReportUrl,
+    //   useImgUpload,
+    //   configReportWxRequest
+    // } = options
+    validateOption(options.apikey, 'apikey', 'string') && (this.apikey = options.apikey)
+    validateOption(options.trackKey, 'trackKey', 'string') && (this.trackKey = options.trackKey)
+    validateOption(options.dsn, 'dsn', 'string') && (this.errorDsn = options.dsn)
+    validateOption(options.trackDsn, 'trackDsn', 'string') && (this.trackDsn = options.trackDsn)
+    validateOption(options.useImgUpload, 'useImgUpload', 'boolean') && (this.useImgUpload = options.useImgUpload)
+    validateOption(options.beforeDataReport, 'beforeDataReport', 'function') && (this.beforeDataReport = options.beforeDataReport)
+    validateOption(options.configReportXhr, 'configReportXhr', 'function') && (this.configReportXhr = options.configReportXhr)
+    validateOption(options.backTrackerId, 'backTrackerId', 'function') && (this.backTrackerId = options.backTrackerId)
+    validateOption(options.configReportUrl, 'configReportUrl', 'function') && (this.configReportUrl = options.configReportUrl)
+    validateOption(options.configReportWxRequest, 'configReportWxRequest', 'function') &&
+      (this.configReportWxRequest = options.configReportWxRequest)
   }
   /**
    * 监控错误上报的请求函数
@@ -165,6 +169,7 @@ export class TransportData {
    * @returns
    */
   async send(data: FinalReportType) {
+    // 获取dsn
     let dsn = ''
     if (isReportDataType(data)) {
       dsn = this.errorDsn
@@ -179,18 +184,27 @@ export class TransportData {
         return
       }
     }
+    // 对数据加工处理
     const result = await this.beforePost(data)
     if (!result) return
+    // 钩子函数，每次发送前都会调用，设置上报到服务端的地址
     if (typeof this.configReportUrl === 'function') {
       dsn = this.configReportUrl(result, dsn)
       if (!dsn) return
     }
 
-    if (isBrowserEnv) {
-      return this.useImgUpload ? this.imgRequest(result, dsn) : this.xhrPost(result, dsn)
+    /****** zhj 错误打印 ******/
+    if (dsn.includes('zhj1214debugger')) {
+      logger.log('监控到错误：', result)
     }
-    if (isWxMiniEnv) {
-      return this.wxPost(result, dsn)
+    // 根据环境使用不同方式、上报
+    else {
+      if (isBrowserEnv) {
+        return this.useImgUpload ? this.imgRequest(result, dsn) : this.xhrPost(result, dsn)
+      }
+      if (isWxMiniEnv) {
+        return this.wxPost(result, dsn)
+      }
     }
   }
 }

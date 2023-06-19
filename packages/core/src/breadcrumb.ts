@@ -3,8 +3,8 @@ import { logger, validateOption, getTimestamp, slientConsoleScope, _support } fr
 import { BreadcrumbPushData, InitOptions } from '@zyf2e/monitor-types'
 
 export class Breadcrumb {
-  maxBreadcrumbs = 10
-  beforePushBreadcrumb: unknown = null
+  maxBreadcrumb = 10
+  beforePushBreadcrumbFn: unknown = null
   stack: BreadcrumbPushData[] = []
   constructor() {}
   /**
@@ -14,11 +14,11 @@ export class Breadcrumb {
    * ../memberof Breadcrumb
    */
   push(data: BreadcrumbPushData): void {
-    if (typeof this.beforePushBreadcrumb === 'function') {
+    if (typeof this.beforePushBreadcrumbFn === 'function') {
       let result: BreadcrumbPushData = null
       // 如果用户输入console，并且logger是打开的会造成无限递归，
       // 应该加入一个开关，执行这个函数前，把监听console的行为关掉
-      const beforePushBreadcrumb = this.beforePushBreadcrumb
+      const beforePushBreadcrumb = this.beforePushBreadcrumbFn
       slientConsoleScope(() => {
         result = beforePushBreadcrumb(this, data)
       })
@@ -30,7 +30,7 @@ export class Breadcrumb {
   }
   immediatePush(data: BreadcrumbPushData): void {
     data.time || (data.time = getTimestamp())
-    if (this.stack.length >= this.maxBreadcrumbs) {
+    if (this.stack.length >= this.maxBreadcrumb) {
       this.shift()
     }
     this.stack.push(data)
@@ -78,10 +78,11 @@ export class Breadcrumb {
         return BREADCRUMBCATEGORYS.EXCEPTION
     }
   }
+  // 设置Breadcrumb
   bindOptions(options: InitOptions = {}): void {
-    const { maxBreadcrumbs, beforePushBreadcrumb } = options
-    validateOption(maxBreadcrumbs, 'maxBreadcrumbs', 'number') && (this.maxBreadcrumbs = maxBreadcrumbs)
-    validateOption(beforePushBreadcrumb, 'beforePushBreadcrumb', 'function') && (this.beforePushBreadcrumb = beforePushBreadcrumb)
+    // const { maxBreadcrumbs, beforePushBreadcrumb } = options
+    validateOption(options.maxBreadcrumbs, 'maxBreadcrumb', 'number') && (this.maxBreadcrumb = options.maxBreadcrumbs)
+    validateOption(options.beforePushBreadcrumb, 'beforePushBreadcrumbFn', 'function') && (this.beforePushBreadcrumbFn = options.beforePushBreadcrumb)
   }
 }
 const breadcrumb = _support.breadcrumb || (_support.breadcrumb = new Breadcrumb())

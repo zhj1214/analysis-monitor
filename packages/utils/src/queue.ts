@@ -27,7 +27,7 @@ export class Queue {
     return this.stack
   }
   flushStack(): void {
-    const temp = this.stack.slice(0)
+    const temp = this.stack.slice(0) // 浅拷贝
     this.stack.length = 0
     this.isFlushing = false
     for (let i = 0; i < temp.length; i++) {
