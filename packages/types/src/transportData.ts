@@ -1,4 +1,4 @@
-import { ERRORTYPES } from '@zyf2e/monitor-shared'
+import { ERRORTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { BreadcrumbPushData } from './breadcrumb'
 import { DeviceInfo, EActionType } from './track'
 

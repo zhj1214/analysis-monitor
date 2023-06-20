@@ -1,7 +1,7 @@
 import { HandleEvents } from './handleEvents'
-import { htmlElementAsString, Severity } from '@zyf2e/monitor-utils'
-import { EVENTTYPES, BREADCRUMBTYPES } from '@zyf2e/monitor-shared'
-import { breadcrumb, handleConsole } from '@zyf2e/monitor-core'
+import { htmlElementAsString, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { EVENTTYPES, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { breadcrumb, handleConsole } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
 import { addReplaceHandler } from './replace'
 export function setupReplace(): void {
   addReplaceHandler({

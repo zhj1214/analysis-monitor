@@ -1,4 +1,4 @@
-import { IAnyObject } from '@zyf2e/monitor-types'
+import { IAnyObject } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 
 export interface MiniRoute {
   from: string

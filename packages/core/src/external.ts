@@ -1,4 +1,4 @@
-import { ERRORTYPES, BREADCRUMBTYPES } from '@zyf2e/monitor-shared'
+import { ERRORTYPES, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import {
   isError,
   extractErrorStack,
@@ -8,10 +8,10 @@ import {
   isWxMiniEnv,
   Severity,
   getCurrentRoute
-} from '@zyf2e/monitor-utils'
+} from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 import { transportData } from './transportData'
 import { breadcrumb } from './breadcrumb'
-import { TNumStrObj } from '@zyf2e/monitor-types'
+import { TNumStrObj } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 
 interface LogTypes {
   message: TNumStrObj
@@ -48,5 +48,5 @@ export function log({ message = 'emptyMsg', tag = '', level = Severity.Critical,
     data: message,
     level: Severity.fromString(level.toString())
   })
-  transportData.send(error);
+  transportData.send(error)
 }

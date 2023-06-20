@@ -1,5 +1,5 @@
-import { EVENTTYPES } from '@zyf2e/monitor-shared'
-import { init } from '@zyf2e/monitor-browser'
+import { EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { init } from '../../browser/dist/browser' //'@zyf2e/monitor-browser'
 import {
   getFlag,
   getGlobal,
@@ -9,7 +9,7 @@ import {
   isWxMiniEnv,
   setFlag,
   supportsHistory
-} from '@zyf2e/monitor-utils'
+} from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('global.ts', () => {
   it('should getGLoabl func work', () => {

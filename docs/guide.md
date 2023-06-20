@@ -222,7 +222,7 @@ class ErrorBoundary extends React.Component {
 
 ```js
 import * as MITO from '@zyf2e/monitor-wx-mini';
-import { MitoVue } from '@zyf2e/monitor-vue'
+import { MitoVue } from '../../vue/dist/vue' // '@zyf2e/monitor-vue'
 import Vue from 'vue';
 // 捕捉Vue框架抛出的错误
 Vue.use(MitoVue);

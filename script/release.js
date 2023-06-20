@@ -38,13 +38,18 @@ async function publicPackage(pkgName) {
     }
     step(`Publishing ${pkgName}...`)
     try {
-      await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'https://registry.npmjs.org'], {
-        cwd: pkgRoot,
-        stdio: 'pipe'
-      })
-      console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
-      // personal registry
-      await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://npmreg.qa.91jkys.com'], {
+      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'https://registry.npmjs.org'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
+      // console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
+      // // personal registry
+      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://npmreg.qa.91jkys.com'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
+      // supaur registry
+      await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://npm.supaur.top'], {
         cwd: pkgRoot,
         stdio: 'pipe'
       })

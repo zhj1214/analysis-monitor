@@ -1,8 +1,10 @@
-import { HandleEvents } from '@zyf2e/monitor-browser'
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@zyf2e/monitor-shared'
-import { breadcrumb, httpTransform, transportData } from '@zyf2e/monitor-core'
-import { MITOHttp, EMethods } from '@zyf2e/monitor-types'
-import { getTimestamp, Severity } from '@zyf2e/monitor-utils'
+// import { HandleEvents } from '../../browser/dist/browser' //'@zyf2e/monitor-browser'
+import { HandleEvents } from '@supaur/qdjk-browser' //'@zyf2e/monitor-browser'
+
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { breadcrumb, httpTransform, transportData } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { MITOHttp, EMethods } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { getTimestamp, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('handleEvents.ts', () => {
   afterEach(() => {

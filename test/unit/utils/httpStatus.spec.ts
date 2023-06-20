@@ -1,4 +1,4 @@
-import { fromHttpStatus, SpanStatus } from '@zyf2e/monitor-utils'
+import { fromHttpStatus, SpanStatus } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('httpStatus.ts', () => {
   it('should fromHttpStatus func work', () => {

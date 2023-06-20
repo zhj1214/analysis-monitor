@@ -1,6 +1,6 @@
-import { BREADCRUMBTYPES, ERRORTYPES } from '@zyf2e/monitor-shared'
-import { breadcrumb, handleConsole, httpTransform, transportData, options as sdkOptions } from '@zyf2e/monitor-core'
-import { ReportDataType, Replace, MITOHttp } from '@zyf2e/monitor-types'
+import { BREADCRUMBTYPES, ERRORTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { breadcrumb, handleConsole, httpTransform, transportData, options as sdkOptions } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { ReportDataType, Replace, MITOHttp } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 import {
   extractErrorStack,
   getCurrentRoute,
@@ -11,7 +11,7 @@ import {
   unknownToString,
   _support,
   Severity
-} from '@zyf2e/monitor-utils'
+} from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 import { getWxMiniDeviceInfo, targetAsString } from './utils'
 import { MiniRoute, WxLifeCycleBreadcrumb, WxOnShareAppMessageBreadcrumb, WxOnTabItemTapBreadcrumb } from './types'
 import { ELinstenerTypes } from './constant'

@@ -1,9 +1,9 @@
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@zyf2e/monitor-shared'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { vueUrl } from '@/test/config'
-import { TransportDataType, BreadcrumbPushData, ReportDataType } from '@zyf2e/monitor-types'
-import { Severity } from '@zyf2e/monitor-utils'
+import { TransportDataType, BreadcrumbPushData, ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 import puppeteer from 'puppeteer'
-import {} from '@zyf2e/monitor-types'
+import {} from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 
 describe('Vue e2e', () => {
   const timeout = 3000

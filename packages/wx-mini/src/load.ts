@@ -1,4 +1,4 @@
-import { EVENTTYPES } from '@zyf2e/monitor-shared'
+import { EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { HandleWxConsoleEvents, HandleNetworkEvents, HandleWxEvents, HandleWxPageEvents } from './handleWxEvents'
 import { addReplaceHandler, replaceApp, replacePage, replaceComponent, replaceBehavior } from './replace'
 

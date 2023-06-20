@@ -1,5 +1,5 @@
-import { InitOptions } from '@zyf2e/monitor-types'
-import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@zyf2e/monitor-utils'
+import { InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 import { breadcrumb } from './breadcrumb'
 import { transportData } from './transportData'
 export class Options {
@@ -75,7 +75,8 @@ export class Options {
     validateOption(options.traceIdFieldName, 'traceIdFieldName', 'string') && (this.traceIdFieldName = options.traceIdFieldName)
     validateOption(options.throttleDelayTime, 'throttleDelayTime', 'number') && (this.throttleDelayTime = options.throttleDelayTime)
     validateOption(options.maxDuplicateCount, 'maxDuplicateCount', 'number') && (this.maxDuplicateCount = options.maxDuplicateCount)
-    toStringValidateOption(options.filterXhrUrlRegExp, 'filterXhrUrlRegExp', '[object RegExp]') && (this.filterXhrUrlRegExp = options.filterXhrUrlRegExp)
+    toStringValidateOption(options.filterXhrUrlRegExp, 'filterXhrUrlRegExp', '[object RegExp]') &&
+      (this.filterXhrUrlRegExp = options.filterXhrUrlRegExp)
     toStringValidateOption(options.includeHttpUrlTraceIdRegExp, 'includeHttpUrlTraceIdRegExp', '[object RegExp]') &&
       (this.includeHttpUrlTraceIdRegExp = options.includeHttpUrlTraceIdRegExp)
   }

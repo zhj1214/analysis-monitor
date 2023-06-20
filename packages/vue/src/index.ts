@@ -1,5 +1,5 @@
-import { getFlag, setFlag, slientConsoleScope, Severity } from '@zyf2e/monitor-utils'
-import { EVENTTYPES } from '@zyf2e/monitor-shared'
+import { getFlag, setFlag, slientConsoleScope, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { VueInstance, ViewModel } from './types'
 import { handleVueError } from './helper'
 

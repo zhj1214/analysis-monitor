@@ -1,6 +1,6 @@
-import { getAppId, isWxMiniEnv, variableTypeDetection } from '@zyf2e/monitor-utils'
-import { ERRORTYPES, EVENTTYPES } from '@zyf2e/monitor-shared'
-import { ReportDataType } from '@zyf2e/monitor-types'
+import { getAppId, isWxMiniEnv, variableTypeDetection } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { ERRORTYPES, EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 import { options } from './options'
 const allErrorNumber: unknown = {}
 /**

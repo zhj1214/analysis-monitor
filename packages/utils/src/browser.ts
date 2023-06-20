@@ -1,7 +1,7 @@
-import { EVENTTYPES, ERRORTYPES, WxAppEvents, WxPageEvents } from '@zyf2e/monitor-shared'
+import { EVENTTYPES, ERRORTYPES, WxAppEvents, WxPageEvents } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { getLocationHref, getTimestamp } from './helpers'
 import { setFlag } from './global'
-import { ReportDataType, InitOptions } from '@zyf2e/monitor-types'
+import { ReportDataType, InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 import { Severity } from './Severity'
 
 /**

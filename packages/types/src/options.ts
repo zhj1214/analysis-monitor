@@ -1,4 +1,4 @@
-import { Breadcrumb } from '@zyf2e/monitor-core'
+import { Breadcrumb } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
 import { BreadcrumbPushData } from './breadcrumb'
 import { TransportDataType } from './transportData'
 type CANCEL = null | undefined | boolean
@@ -262,7 +262,6 @@ interface WxMiniHooksTypes {
   triggerWxEvent?(e: WechatMiniprogram.BaseEvent): void
 }
 
-
 export interface BrowserHooksTypes {
-  onRouteChange?: (from: string, to: string) => unknown,
+  onRouteChange?: (from: string, to: string) => unknown
 }

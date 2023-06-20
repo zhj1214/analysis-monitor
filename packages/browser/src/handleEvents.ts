@@ -1,8 +1,7 @@
-import { BREADCRUMBTYPES, ERRORTYPES, ERROR_TYPE_RE, HTTP_CODE } from '@zyf2e/monitor-shared'
-import { transportData, breadcrumb, resourceTransform, httpTransform, options } from '@zyf2e/monitor-core';
-import { getLocationHref, getTimestamp, isError, parseUrlToObj, extractErrorStack, unknownToString, Severity } from '@zyf2e/monitor-utils'
-import { ReportDataType, Replace, MITOHttp, ResourceErrorTarget } from '@zyf2e/monitor-types'
-
+import { BREADCRUMBTYPES, ERRORTYPES, ERROR_TYPE_RE, HTTP_CODE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { transportData, breadcrumb, resourceTransform, httpTransform, options } from '@zhj/monitor-core' // '@zyf2e/monitor-core';
+import { getLocationHref, getTimestamp, isError, parseUrlToObj, extractErrorStack, unknownToString, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { ReportDataType, Replace, MITOHttp, ResourceErrorTarget } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 const HandleEvents = {
   /**
    * 处理xhr、fetch回调
@@ -99,7 +98,7 @@ const HandleEvents = {
       },
       level: Severity.Info
     })
-    const { onRouteChange } = options;
+    const { onRouteChange } = options
     if (onRouteChange) {
       onRouteChange(from, to)
     }
@@ -117,7 +116,7 @@ const HandleEvents = {
       },
       level: Severity.Info
     })
-    const { onRouteChange } = options;
+    const { onRouteChange } = options
     if (onRouteChange) {
       onRouteChange(from, to)
     }

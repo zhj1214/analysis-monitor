@@ -1,7 +1,7 @@
-import { ERRORTYPES } from '@zyf2e/monitor-shared'
-import { createErrorId, getFlutterRealOrigin, getFlutterRealPath, getRealPageOrigin, getRealPath } from '@zyf2e/monitor-core'
-import { ReportDataType } from '@zyf2e/monitor-types'
-import { isWxMiniEnv, Severity } from '@zyf2e/monitor-utils'
+import { ERRORTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { createErrorId, getFlutterRealOrigin, getFlutterRealPath, getRealPageOrigin, getRealPath } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { isWxMiniEnv, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('errorId.ts', () => {
   const apikey = '13213-1231-1231'

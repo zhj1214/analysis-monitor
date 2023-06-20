@@ -1,4 +1,4 @@
-import { extractErrorStack, htmlElementAsString, parseUrlToObj, Severity } from '@zyf2e/monitor-utils'
+import { extractErrorStack, htmlElementAsString, parseUrlToObj, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('browser.ts', () => {
   describe('htmlElementAsString function', () => {

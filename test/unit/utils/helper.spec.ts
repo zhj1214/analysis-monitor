@@ -1,4 +1,4 @@
-import { ERRORTYPES, globalVar } from '@zyf2e/monitor-shared'
+import { ERRORTYPES, globalVar } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import {
   defaultFunctionName,
   generateUUID,
@@ -16,7 +16,7 @@ import {
   typeofAny,
   unknownToString,
   validateOption
-} from '@zyf2e/monitor-utils'
+} from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('helper.ts', () => {
   it('should getLocationHref func work', () => {

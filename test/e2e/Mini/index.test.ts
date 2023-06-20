@@ -1,10 +1,10 @@
 import MiniProgram from 'miniprogram-automator/out/MiniProgram'
 import Page from 'miniprogram-automator/out/Page'
-import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace } from '@zyf2e/monitor-types'
+import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 import automator from 'miniprogram-automator'
 import { resolve } from 'path'
-import { Severity } from '@zyf2e/monitor-utils'
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, HTTPTYPE, SDK_NAME, SDK_VERSION } from '@zyf2e/monitor-shared'
+import { Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, HTTPTYPE, SDK_NAME, SDK_VERSION } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { ServerUrls } from '../../../examples/server/config'
 
 describe('Min e2e:', () => {

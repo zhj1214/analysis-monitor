@@ -1,7 +1,7 @@
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES } from '@zyf2e/monitor-shared'
-import { breadcrumb } from '@zyf2e/monitor-core'
-import { BreadcrumbPushData } from '@zyf2e/monitor-types'
-import { Severity } from '@zyf2e/monitor-utils'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { breadcrumb } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { BreadcrumbPushData } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
 
 describe('breadcrumb.ts', () => {
   beforeAll(() => {

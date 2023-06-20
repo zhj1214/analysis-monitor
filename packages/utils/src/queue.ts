@@ -1,4 +1,4 @@
-import { voidFun } from '@zyf2e/monitor-shared'
+import { voidFun } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
 import { _global } from './global'
 export class Queue {
   private micro: Promise<void>

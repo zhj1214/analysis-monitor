@@ -79,13 +79,13 @@
     }
   },
   "dependencies": {
-    "@zyf2e/monitor-browser": "^2.1.29",
-    "@zyf2e/monitor-core": "^2.1.29",
-    "@zyf2e/monitor-react": "^2.1.29",
-    "@zyf2e/monitor-shared": "^2.1.29",
-    "@zyf2e/monitor-types": "^2.1.29",
-    "@zyf2e/monitor-utils": "^2.1.29",
-    "@zyf2e/monitor-vue": "^2.1.29",
+    "@supaur/qdjk-browser": "file:./packages/browser",
+    "@supaur/qdjk-core": "file:./packages/core",
+    "@supaur/qdjk-react": "file:./packages/react",
+    "@supaur/qdjk-shared": "file:./packages/shared",
+    "@supaur/qdjk-types": "file:./packages/types",
+    "@supaur/qdjk-utils": "file:./packages/utils",
+    "@supaur/qdjk-vue": "file:./packages/vue",
     "core-js": "^3.19.1",
     "path-to-regexp": "^6.2.0"
   }

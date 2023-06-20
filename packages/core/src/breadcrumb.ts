@@ -1,6 +1,6 @@
-import { BREADCRUMBTYPES, BREADCRUMBCATEGORYS } from '@zyf2e/monitor-shared'
-import { logger, validateOption, getTimestamp, slientConsoleScope, _support } from '@zyf2e/monitor-utils'
-import { BreadcrumbPushData, InitOptions } from '@zyf2e/monitor-types'
+import { BREADCRUMBTYPES, BREADCRUMBCATEGORYS } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { logger, validateOption, getTimestamp, slientConsoleScope, _support } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { BreadcrumbPushData, InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 
 export class Breadcrumb {
   maxBreadcrumb = 10
@@ -82,7 +82,8 @@ export class Breadcrumb {
   bindOptions(options: InitOptions = {}): void {
     // const { maxBreadcrumbs, beforePushBreadcrumb } = options
     validateOption(options.maxBreadcrumbs, 'maxBreadcrumb', 'number') && (this.maxBreadcrumb = options.maxBreadcrumbs)
-    validateOption(options.beforePushBreadcrumb, 'beforePushBreadcrumbFn', 'function') && (this.beforePushBreadcrumbFn = options.beforePushBreadcrumb)
+    validateOption(options.beforePushBreadcrumb, 'beforePushBreadcrumbFn', 'function') &&
+      (this.beforePushBreadcrumbFn = options.beforePushBreadcrumb)
   }
 }
 const breadcrumb = _support.breadcrumb || (_support.breadcrumb = new Breadcrumb())

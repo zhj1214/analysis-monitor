@@ -1,6 +1,6 @@
 {
-  "name": "@zyf2e/monitor-core",
-  "version": "2.1.54",
+  "name": "@supaur/qdjk-core",
+  "version": "0.0.1",
   "description": "@zyf2e/monitor-core",
   "author": "cjinhuo",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "dist"
   ],
   "dependencies": {
-    "@zyf2e/monitor-core": "2.1.54",
-    "@zyf2e/monitor-types": "2.1.54",
-    "@zyf2e/monitor-utils": "2.1.54",
-    "@zyf2e/monitor-shared": "2.1.54"
+    "@supaur/qdjk-core": "file:./packages/core",
+    "@supaur/qdjk-types": "file:./packages/types",
+    "@supaur/qdjk-utils": "file:./packages/utils",
+    "@supaur/qdjk-shared": "file:./packages/shared"
   }
 }

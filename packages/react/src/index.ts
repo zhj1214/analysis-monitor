@@ -1,7 +1,7 @@
-import { BREADCRUMBTYPES, ERRORTYPES } from '@zyf2e/monitor-shared'
-import { isError, extractErrorStack, Severity } from '@zyf2e/monitor-utils'
-import { breadcrumb, transportData } from '@zyf2e/monitor-core'
-import { ReportDataType } from '@zyf2e/monitor-types'
+import { BREADCRUMBTYPES, ERRORTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { isError, extractErrorStack, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { breadcrumb, transportData } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
 
 /**
  * 收集react ErrorBoundary中的错误对象
