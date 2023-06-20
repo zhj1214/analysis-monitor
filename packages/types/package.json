@@ -1,7 +1,7 @@
 {
   "name": "@supaur/qdjk-types",
   "version": "0.0.1",
-  "description": "@zyf2e/monitor-types",
+  "description": "@supaur/qdjk-types",
   "author": "cjinhuo",
   "license": "MIT",
   "main": "dist/types.js",
@@ -11,9 +11,9 @@
     "dist"
   ],
   "dependencies": {
-    "@supaur/qdjk-core": "file:./packages/core",
-    "@supaur/qdjk-utils": "file:./packages/utils",
-    "@supaur/qdjk-browser": "file:./packages/browser",
-    "@supaur/qdjk-shared": "file:./packages/shared"
+    "@supaur/qdjk-core": "0.0.1",
+    "@supaur/qdjk-utils": "0.0.1",
+    "@supaur/qdjk-browser": "0.0.1",
+    "@supaur/qdjk-shared": "0.0.1"
   }
 }

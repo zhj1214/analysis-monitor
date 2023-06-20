@@ -1,5 +1,5 @@
-import { InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { breadcrumb } from './breadcrumb'
 import { transportData } from './transportData'
 export class Options {

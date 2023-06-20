@@ -1,7 +1,7 @@
 import { HandleEvents } from './handleEvents'
-import { htmlElementAsString, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { EVENTTYPES, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { breadcrumb, handleConsole } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { htmlElementAsString, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { EVENTTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { breadcrumb, handleConsole } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 import { addReplaceHandler } from './replace'
 export function setupReplace(): void {
   addReplaceHandler({

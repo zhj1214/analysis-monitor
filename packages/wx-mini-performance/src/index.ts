@@ -1,4 +1,4 @@
-import { isWxMiniEnv } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { isWxMiniEnv } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { initBatteryInfo, initMemoryWarning, initNetworkInfo, initWxHideReport, initWxPerformance, initWxNetwork } from './wx/index'
 import Store from './core/store'
 // import { version } from '../package.json'

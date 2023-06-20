@@ -1,5 +1,5 @@
-import { Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ReportDataType } from './transportData'
 import { Replace } from './replace'
 import { TNumStrObj } from './common'

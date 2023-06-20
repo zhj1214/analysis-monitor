@@ -1,8 +1,8 @@
-import { EVENTTYPES, WxEvents } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { Breadcrumb, TransportData, Options } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { EVENTTYPES, WxEvents } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { Breadcrumb, TransportData, Options } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 import { Logger } from './logger'
 import { variableTypeDetection } from './is'
-import { DeviceInfo } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { DeviceInfo } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 // MITO的全局变量
 export interface MitoSupport {

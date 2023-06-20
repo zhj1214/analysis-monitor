@@ -1,4 +1,4 @@
-# @zyf2e/monitor-browser
+# @supaur/qdjk-browser
 
 - [x] 🔨监听请求错误
 - [x] 🔨console

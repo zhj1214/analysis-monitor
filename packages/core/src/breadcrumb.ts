@@ -1,6 +1,6 @@
-import { BREADCRUMBTYPES, BREADCRUMBCATEGORYS } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { logger, validateOption, getTimestamp, slientConsoleScope, _support } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { BreadcrumbPushData, InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { BREADCRUMBTYPES, BREADCRUMBCATEGORYS } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { logger, validateOption, getTimestamp, slientConsoleScope, _support } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { BreadcrumbPushData, InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 export class Breadcrumb {
   maxBreadcrumb = 10

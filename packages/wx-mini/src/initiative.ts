@@ -1,6 +1,6 @@
-import { EActionType, ITrackBaseParam, TrackReportData } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { transportData } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { generateUUID, getTimestamp } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { EActionType, ITrackBaseParam, TrackReportData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { generateUUID, getTimestamp } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 export function track(actionType: EActionType, param: ITrackBaseParam) {
   const data = {

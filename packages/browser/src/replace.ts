@@ -8,10 +8,10 @@ import {
   isExistProperty,
   variableTypeDetection,
   supportsHistory
-} from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { transportData, options, setTraceId, triggerHandlers, ReplaceHandler, subscribeEvent } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { EMethods, MITOHttp, MITOXMLHttpRequest } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { voidFun, EVENTTYPES, HTTPTYPE, HTTP_CODE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { transportData, options, setTraceId, triggerHandlers, ReplaceHandler, subscribeEvent } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { EMethods, MITOHttp, MITOXMLHttpRequest } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { voidFun, EVENTTYPES, HTTPTYPE, HTTP_CODE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 
 function isFilterHttpUrl(url: string) {
   return options.filterXhrUrlRegExp && options.filterXhrUrlRegExp.test(url)

@@ -1,8 +1,8 @@
-import { getBigVersion, getLocationHref, getTimestamp, variableTypeDetection, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { ERRORTYPES, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { getBigVersion, getLocationHref, getTimestamp, variableTypeDetection, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { ERRORTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ViewModel, VueInstance } from './types'
-import { breadcrumb, transportData } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { breadcrumb, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 export function handleVueError(
   err: Error,

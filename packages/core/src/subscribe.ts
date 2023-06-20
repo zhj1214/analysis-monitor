@@ -1,5 +1,5 @@
-import { EVENTTYPES, WxEvents } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { getFlag, getFunctionName, logger, nativeTryCatch, setFlag } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { EVENTTYPES, WxEvents } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { getFlag, getFunctionName, logger, nativeTryCatch, setFlag } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 export interface ReplaceHandler {
   type: EVENTTYPES | WxEvents
   callback: ReplaceCallback

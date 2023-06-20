@@ -1,4 +1,4 @@
-import { setUrlQuery, variableTypeDetection, generateUUID } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { setUrlQuery, variableTypeDetection, generateUUID } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { STORAGE_KEY } from '../constant'
 
 export function noop() {}

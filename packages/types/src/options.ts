@@ -1,4 +1,4 @@
-import { Breadcrumb } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { Breadcrumb } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 import { BreadcrumbPushData } from './breadcrumb'
 import { TransportDataType } from './transportData'
 type CANCEL = null | undefined | boolean

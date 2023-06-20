@@ -1,5 +1,5 @@
-import { IAnyObject, IntegrationError } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { globalVar, HTTP_CODE, ERRORTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { IAnyObject, IntegrationError } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { globalVar, HTTP_CODE, ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { logger } from './logger'
 import { nativeToString, variableTypeDetection } from './is'
 

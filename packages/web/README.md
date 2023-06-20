@@ -1,10 +1,10 @@
-# @zyf2e/monitor-web
+# @supaur/qdjk-web
 
 整合:
 
-* [@zyf2e/monitor-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
-* [@zyf2e/monitor-react](https://github.com/clouDr-f2e/mitojs/tree/master/packages/react)
-* [@zyf2e/monitor-vue](https://github.com/clouDr-f2e/mitojs/tree/master/packages/vue)
+* [@supaur/qdjk-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
+* [@supaur/qdjk-react](https://github.com/clouDr-f2e/mitojs/tree/master/packages/react)
+* [@supaur/qdjk-vue](https://github.com/clouDr-f2e/mitojs/tree/master/packages/vue)
 
 ## 使用指南
 

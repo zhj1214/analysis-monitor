@@ -1,4 +1,4 @@
-import { HTTPTYPE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
+import { HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 
 export interface IAnyObject {
   [key: string]: any

@@ -1,7 +1,7 @@
-import { BREADCRUMBTYPES, ERRORTYPES, ERROR_TYPE_RE, HTTP_CODE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { transportData, breadcrumb, resourceTransform, httpTransform, options } from '@zhj/monitor-core' // '@zyf2e/monitor-core';
-import { getLocationHref, getTimestamp, isError, parseUrlToObj, extractErrorStack, unknownToString, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { ReportDataType, Replace, MITOHttp, ResourceErrorTarget } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { BREADCRUMBTYPES, ERRORTYPES, ERROR_TYPE_RE, HTTP_CODE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { transportData, breadcrumb, resourceTransform, httpTransform, options } from '@supaur/qdjk-core' // '@supaur/qdjk-core';
+import { getLocationHref, getTimestamp, isError, parseUrlToObj, extractErrorStack, unknownToString, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { ReportDataType, Replace, MITOHttp, ResourceErrorTarget } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 const HandleEvents = {
   /**
    * 处理xhr、fetch回调

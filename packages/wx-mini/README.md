@@ -1,4 +1,4 @@
-# @zyf2e/monitor-wx-mini
+# @supaur/qdjk-wx-mini
 
 ### 微信小程序
 

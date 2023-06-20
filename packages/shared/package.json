@@ -1,7 +1,7 @@
 {
   "name": "@supaur/qdjk-shared",
   "version": "0.0.1",
-  "description": "@zyf2e/monitor-shared",
+  "description": "@supaur/qdjk-shared",
   "author": "cjinhuo",
   "license": "MIT",
   "main": "dist/shared.js",

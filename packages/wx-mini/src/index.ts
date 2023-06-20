@@ -1,11 +1,11 @@
-import { InitOptions } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { isWxMiniEnv } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { isWxMiniEnv } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { setupReplace } from './load'
-import { initOptions, log } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { initOptions, log } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 import { sendTrackData, track } from './initiative'
-import { SDK_NAME, SDK_VERSION } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { MitoVue } from '../../vue/dist/vue' // '@zyf2e/monitor-vue'
-import { errorBoundaryReport } from '../../react/dist/react' // '@zyf2e/monitor-react'
+import { SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { MitoVue } from '@supaur/qdjk-vue' // '@supaur/qdjk-vue'
+import { errorBoundaryReport } from '@supaur/qdjk-react' // 
 export function init(options: InitOptions = {}) {
   if (!isWxMiniEnv) return
   initOptions(options)

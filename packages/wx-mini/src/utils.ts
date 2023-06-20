@@ -1,5 +1,5 @@
-import { setUrlQuery, variableTypeDetection } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { DeviceInfo } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { setUrlQuery, variableTypeDetection } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { DeviceInfo } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 /**
  * 后退时需要计算当前页面地址

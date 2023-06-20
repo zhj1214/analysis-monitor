@@ -1,6 +1,6 @@
-import { getAppId, isWxMiniEnv, variableTypeDetection } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
-import { ERRORTYPES, EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { ReportDataType } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
+import { getAppId, isWxMiniEnv, variableTypeDetection } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { ERRORTYPES, EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 import { options } from './options'
 const allErrorNumber: unknown = {}
 /**

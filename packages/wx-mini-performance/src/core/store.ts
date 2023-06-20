@@ -1,5 +1,5 @@
 import { noop, getPageUrl, getDeviceId } from '../utils'
-import { generateUUID, validateOption, toStringValidateOption } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { generateUUID, validateOption, toStringValidateOption } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { WxPerformanceDataType, WxPerformanceItemType } from '../constant'
 import Event from './event'
 import {

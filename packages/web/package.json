@@ -11,8 +11,8 @@
     "dist"
   ],
   "dependencies": {
-    "@supaur/qdjk-browser": "file:./packages/browser",
-    "@supaur/qdjk-react": "file:./packages/react",
-    "@supaur/qdjk-vue": "file:./packages/vue"
+    "@supaur/qdjk-browser": "0.0.1",
+    "@supaur/qdjk-react": "0.0.1",
+    "@supaur/qdjk-vue": "0.0.1"
   }
 }
