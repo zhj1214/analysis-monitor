@@ -1,7 +1,7 @@
-import { ERRORTYPES, HTTPTYPE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { httpTransform, resourceTransform, getRealPath } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { EMethods, MITOHttp, ResourceErrorTarget } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { getLocationHref, fromHttpStatus, Severity, interceptStr } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { ERRORTYPES, HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { httpTransform, resourceTransform, getRealPath } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { EMethods, MITOHttp, ResourceErrorTarget } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { getLocationHref, fromHttpStatus, Severity, interceptStr } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('transformData.ts', () => {
   it('should resourceTransform func work', () => {

@@ -1,4 +1,4 @@
-import { logger } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { logger } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('logger.ts', () => {
   it('should logger config enabled can take effect', () => {

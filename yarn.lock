@@ -887,15 +887,15 @@
     "@rushstack/node-core-library" "3.59.4"
 
 "@microsoft/api-extractor@^7.13.2":
-  version "7.35.4"
-  resolved "http://npm.supaur.top/@microsoft%2fapi-extractor/-/api-extractor-7.35.4.tgz#87478e1e52dcae7f5e7760e870a9a07e9e4292f1"
-  integrity sha512-E/DIIlgu1ZW+AD+Y0UuVe/30rO+Km0CRkDU1aOKQntwKtv/+FodtRAUvzU/vAxq5lQHSsy6jJErLiXR6G3fupA==
+  version "7.36.0"
+  resolved "http://npm.supaur.top/@microsoft%2fapi-extractor/-/api-extractor-7.36.0.tgz#e0a9f449bb1393697691b79045f384dd78fd760e"
+  integrity sha512-P+kYgJFDXIr+UNzhRMhlpM/dderi6ab4lxn35vdhfAIMPtGCSXIJxrrtpTOQmQW8CZtmoZX06LYoUsKCc1zjow==
   dependencies:
     "@microsoft/api-extractor-model" "7.27.3"
     "@microsoft/tsdoc" "0.14.2"
     "@microsoft/tsdoc-config" "~0.16.1"
     "@rushstack/node-core-library" "3.59.4"
-    "@rushstack/rig-package" "0.3.21"
+    "@rushstack/rig-package" "0.4.0"
     "@rushstack/ts-command-line" "4.15.1"
     colors "~1.2.1"
     lodash "~4.17.15"
@@ -998,10 +998,10 @@
     semver "~7.3.0"
     z-schema "~5.0.2"
 
-"@rushstack/rig-package@0.3.21":
-  version "0.3.21"
-  resolved "http://npm.supaur.top/@rushstack%2frig-package/-/rig-package-0.3.21.tgz#5bd48c2a890f7d892c40fa1780f98af29c8140a4"
-  integrity sha512-6KPBuZYP/b9U0Qwy1J4vjYtXvLavdmVT7mMelErfqqZ3P/ywoxlFITGr9ZbqD1zmfIVrIfC2jrM6gfm7OHPRhQ==
+"@rushstack/rig-package@0.4.0":
+  version "0.4.0"
+  resolved "http://npm.supaur.top/@rushstack%2frig-package/-/rig-package-0.4.0.tgz#1dade94da5cd81321ca9ec630b6ceed2d57cc826"
+  integrity sha512-FnM1TQLJYwSiurP6aYSnansprK5l8WUK8VG38CmAaZs29ZeL1msjK0AP1VS4ejD33G0kE/2cpsPsS9jDenBMxw==
   dependencies:
     resolve "~1.22.1"
     strip-json-comments "~3.1.1"
@@ -1029,6 +1029,70 @@
   integrity sha1-KTZ0/MsyYqx4LHqt/eyoaxDHXEA=
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@supaur/qdjk-browser@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-browser/-/qdjk-browser-0.0.1.tgz#44d5996abffcc39c56274e7d1614dd2031e9abc0"
+  integrity sha512-CQWMYw4gF22sdPHwinKoYnjo6ae87EftchPaM9eMEn/8j2kVVqZinNgFGz+cwgFmvmvAlH80oPZZGiJ2Cmng8Q==
+  dependencies:
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
+
+"@supaur/qdjk-core@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-core/-/qdjk-core-0.0.1.tgz#89edcbd9e0c3310eed722080cdea55134b546fc4"
+  integrity sha512-uDu2bY0F4hgMhxmLd4X7V7lcxovG8Pcf7fQ90UCC+4ghymuoTct9LhwY+kSiU86VaQ4zTIVcCGJDXtaNhmrLYg==
+  dependencies:
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
+
+"@supaur/qdjk-react@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-react/-/qdjk-react-0.0.1.tgz#77fa3182f980bc3e764ada2d12a60b73c0cd88da"
+  integrity sha512-Tv1oSyJ8bDftwSPFpJFMjCL1B6/EzzgDDeT8b10EXr1XNiuFpx570o8uM5C9ycFdcRJj5T32fSER6Yk//CaTnA==
+  dependencies:
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
+
+"@supaur/qdjk-shared@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-shared/-/qdjk-shared-0.0.1.tgz#dc706cd353ac77567624a1cc515200e36385cd66"
+  integrity sha512-WsX0LbuKYi9S+stHTuHqN0qJmZAv68RiYvDWArGLsZF4c4b+gzC/AF1Sq/EGTB+HcZhXTN+R02pOMRCE/qowEg==
+
+"@supaur/qdjk-types@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-types/-/qdjk-types-0.0.1.tgz#31060635f86c637b0f7d82fccfb4472c4194aab3"
+  integrity sha512-FC9u8pjUnGB4/3TanJmRtrlZ5C4chUYyzuQylvllNHtjPoHAzXhTVLd4p11Ez+olYd4LfgijkGNN1ropawxCWw==
+  dependencies:
+    "@supaur/qdjk-browser" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
+
+"@supaur/qdjk-utils@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-utils/-/qdjk-utils-0.0.1.tgz#465a7ad9ff513c24d983736d8144405a0ef9ca5e"
+  integrity sha512-Dgxu3dc32vUXZwZGJ/qT8U0hvQbzt5ol5cMn8VE2GIGopF3tFjqZ6xEcs5vwqK9niIWE8iMPr7xdPtu78WVZOw==
+  dependencies:
+    "@supaur/qdjk-browser" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+
+"@supaur/qdjk-vue@0.0.1":
+  version "0.0.1"
+  resolved "http://npm.supaur.top/@supaur%2fqdjk-vue/-/qdjk-vue-0.0.1.tgz#da8b364ecfbce5a311618a7d243a34fd268747e5"
+  integrity sha512-h2NYdMRl/QTng458wTQmWYQ9/IfdjCLTXr373+Hude2m5BfVTQW7dUJx5ymtWTRxKRkUAsG5dQN4ok2trkE8gw==
+  dependencies:
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -1359,69 +1423,50 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@zyf2e/monitor-browser@2.1.54", "@zyf2e/monitor-browser@^2.1.29":
+"@supaur/qdjk-browser@2.1.54":
   version "2.1.54"
   resolved "http://npm.supaur.top/@zyf2e%2fmonitor-browser/-/monitor-browser-2.1.54.tgz#23a99eaa2905dc639aeff9e77b8509295f6d1089"
   integrity sha512-JYxOqdoINJKjqcCfisClobRgfUns3d/lcdJ2/Y85Y9dqArwOYQ2XmsS4XPSLiPGeYQdfGlqCAKJVn92/ICr0Rw==
   dependencies:
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-types" "2.1.54"
-    "@zyf2e/monitor-utils" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
 
-"@zyf2e/monitor-core@2.1.54", "@zyf2e/monitor-core@^2.1.29":
+"@supaur/qdjk-core@2.1.54":
   version "2.1.54"
   resolved "http://npm.supaur.top/@zyf2e%2fmonitor-core/-/monitor-core-2.1.54.tgz#a8882a3038b6d380213d57e36766cfccd39e31f6"
   integrity sha512-1gN2NnamI6pDVDWH6nOxWJLHYS0Gllxze195CixnoIDXfH3xD2S5aLZ5LQWOr/CjSHlovvesYAJEa6QXOBtHZg==
   dependencies:
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-types" "2.1.54"
-    "@zyf2e/monitor-utils" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
 
-"@zyf2e/monitor-react@^2.1.29":
-  version "2.1.54"
-  resolved "http://npm.supaur.top/@zyf2e%2fmonitor-react/-/monitor-react-2.1.54.tgz#b12599e8024f8e6126e32ff0e93819ab7c3064f1"
-  integrity sha512-qbte5jSxzz/kbPPLKrngnvxgOZXhNqoT8dISHLyn4ypkI6lt/clRVjZKtPfOtlL/2zeDzQoG884vI+MT33HnEQ==
-  dependencies:
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-utils" "2.1.54"
-
-"@zyf2e/monitor-shared@2.1.54", "@zyf2e/monitor-shared@^2.1.29":
+"@supaur/qdjk-shared@2.1.54":
   version "2.1.54"
   resolved "http://npm.supaur.top/@zyf2e%2fmonitor-shared/-/monitor-shared-2.1.54.tgz#9a883ec8019a40931d126797322724f0770578a8"
   integrity sha512-L7y8R5AgtKF5KNhZXeKWJtleiLAlxt802GE+gwE2rXmD9TDqqCCZg+w61f76W7LngfkMPWOKk5CJ06Ex/gxchg==
 
-"@zyf2e/monitor-types@2.1.54", "@zyf2e/monitor-types@^2.1.29":
+"@supaur/qdjk-types@2.1.54":
   version "2.1.54"
   resolved "http://npm.supaur.top/@zyf2e%2fmonitor-types/-/monitor-types-2.1.54.tgz#167616dea4631df102822eb9548421690f47b1fb"
   integrity sha512-qmwcfPNMyQytS27/pLHTQqAKbz+0yLpMgFklDeORmiIcFozatTFT949my3P+xAxPTcGyat0CXIFA2Vjc48OtJA==
   dependencies:
-    "@zyf2e/monitor-browser" "2.1.54"
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-utils" "2.1.54"
+    "@supaur/qdjk-browser" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-utils" "2.1.54"
 
-"@zyf2e/monitor-utils@2.1.54", "@zyf2e/monitor-utils@^2.1.29":
+"@supaur/qdjk-utils@2.1.54":
   version "2.1.54"
   resolved "http://npm.supaur.top/@zyf2e%2fmonitor-utils/-/monitor-utils-2.1.54.tgz#afd374380cdac1313f89f92e2ae680fe7028213d"
   integrity sha512-tyFIrllxEcER0gco61/3GYrB0FjZ9AmnSpGCqM92yGx7ECd7mrbcej1o5EUgWNhGXyRAOz3/I+WIGJa68Ux3jw==
   dependencies:
-    "@zyf2e/monitor-browser" "2.1.54"
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-types" "2.1.54"
-
-"@zyf2e/monitor-vue@^2.1.29":
-  version "2.1.54"
-  resolved "http://npm.supaur.top/@zyf2e%2fmonitor-vue/-/monitor-vue-2.1.54.tgz#ae925495a957b35ab950345514923e8bd48d5df3"
-  integrity sha512-qw1we83gytz1EiLInbb4siA/YF4MlOZXFpT3zL5jM1BYYZN1ty40jiB/vBfeMija4i0gGkQfxrGLuUkI66SY2w==
-  dependencies:
-    "@zyf2e/monitor-core" "2.1.54"
-    "@zyf2e/monitor-shared" "2.1.54"
-    "@zyf2e/monitor-types" "2.1.54"
-    "@zyf2e/monitor-utils" "2.1.54"
+    "@supaur/qdjk-browser" "2.1.54"
+    "@supaur/qdjk-core" "2.1.54"
+    "@supaur/qdjk-shared" "2.1.54"
+    "@supaur/qdjk-types" "2.1.54"
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
@@ -1891,9 +1936,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001503:
-  version "1.0.30001504"
-  resolved "http://npm.supaur.top/caniuse-lite/-/caniuse-lite-1.0.30001504.tgz#eaf77e5c852dfa5f82c4924468c30602ac53744a"
-  integrity sha512-5uo7eoOp2mKbWyfMXnGO9rJWOGU8duvzEiYITW+wivukL7yHH4gX9yuRaobu6El4jPxo6jKZfG+N6fB621GD/Q==
+  version "1.0.30001505"
+  resolved "http://npm.supaur.top/caniuse-lite/-/caniuse-lite-1.0.30001505.tgz#10a343e49d31cbbfdae298ef73cb0a9f46670dc5"
+  integrity sha512-jaAOR5zVtxHfL0NjZyflVTtXm3D3J9P15zSJ7HmQF8dSKGA6tqzQq+0ZI3xkjyQj46I4/M0K2GbMpcAFOcbr3A==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -2468,9 +2513,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.431:
-  version "1.4.433"
-  resolved "http://npm.supaur.top/electron-to-chromium/-/electron-to-chromium-1.4.433.tgz#305ef5f8ea5fe65d252aae4b0e1088f9e4842533"
-  integrity sha512-MGO1k0w1RgrfdbLVwmXcDhHHuxCn2qRgR7dYsJvWFKDttvYPx6FNzCGG0c/fBBvzK2LDh3UV7Tt9awnHnvAAUQ==
+  version "1.4.434"
+  resolved "http://npm.supaur.top/electron-to-chromium/-/electron-to-chromium-1.4.434.tgz#4bdef7b5b18d8dac177ec0d31dab9f92eebf22a1"
+  integrity sha512-5Gvm09UZTQRaWrimRtWRO5rvaX6Kpk5WHAPKDa7A4Gj6NIPuJ8w8WNpnxCXdd+CJJt6RBU6tUw0KyULoW6XuHw==
 
 emittery@^0.7.1:
   version "0.7.2"
@@ -5073,9 +5118,9 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.2, picomatch@^2.3.1:
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
 pirates@^4.0.1:
-  version "4.0.5"
-  resolved "http://npm.supaur.top/pirates/-/pirates-4.0.5.tgz#feec352ea5c3268fb23a37c702ab1699f35a5f3b"
-  integrity sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==
+  version "4.0.6"
+  resolved "http://npm.supaur.top/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
+  integrity sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==
 
 pixelmatch@^4.0.2:
   version "4.0.2"

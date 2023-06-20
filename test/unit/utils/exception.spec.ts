@@ -1,4 +1,4 @@
-import { nativeTryCatch } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { nativeTryCatch } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('exception.ts', () => {
   it('should nativeTryCatch func work', () => {

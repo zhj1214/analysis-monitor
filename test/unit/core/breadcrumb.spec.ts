@@ -1,7 +1,7 @@
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { breadcrumb } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { BreadcrumbPushData } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { breadcrumb } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { BreadcrumbPushData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('breadcrumb.ts', () => {
   beforeAll(() => {

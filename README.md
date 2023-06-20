@@ -4,14 +4,14 @@
     </a>
     <p>一款轻量级的收集页面的用户点击行为、路由跳转、接口报错、代码报错、并上报服务端的SDK</p>
 
-[![npm version](https://img.shields.io/npm/v/@zyf2e/monitor-web.svg?style=flat-square)](https://www.npmjs.com/package/@zyf2e/monitor-web)
+[![npm version](https://img.shields.io/npm/v/@supaur/qdjk-web.svg?style=flat-square)](https://www.npmjs.com/package/@supaur/qdjk-web)
 [![license](https://img.shields.io/github/license/clouDr-f2e/mitojs)](https://github.com/clouDr-f2e/mitojs/blob/dev/LICENSE)
 [![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![GitHub last commit](https://img.shields.io/github/last-commit/clouDr-f2e/monitor.svg?style=flat-square)](https://github.com/clouDr-f2e/monitor/commits/master)
 [![build status](https://img.shields.io/travis/clouDr-f2e/monitor/master.svg?style=flat-square)](https://travis-ci.com/github/clouDr-f2e/monitor)
 [![codecov](https://codecov.io/gh/clouDr-f2e/monitor/branch/master/graph/badge.svg?token=W7JP5GDOM7)](https://codecov.io/gh/clouDr-f2e/monitor)
 
-<!-- [![npm downloads](https://img.shields.io/npm/dm/@zyf2e/monitor.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@zyf2e/monitor) -->
+<!-- [![npm downloads](https://img.shields.io/npm/dm/@supaur/qdjk.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@supaur/qdjk) -->
 
 
 </div>
@@ -30,11 +30,11 @@
 - [x] 👌持续迭代与更新
 - [x] 完善的浏览器e2e和微信小程序e2e
 - [x] 完善的单元测试（77%~coding）
-- [x] 支持原生Web [@zyf2e/monitor-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
-- [x] 支持Web框架（Vue3、Vue2、React@Next） [@zyf2e/monitor-web](https://github.com/clouDr-f2e/mitojs/tree/master/packages/web)
-- [x] 支持原生微信小程序、支持uni-app等微信小程序框架 [@zyf2e/monitor-wx-mini](https://github.com/clouDr-f2e/mitojs/tree/master/packages/wx-mini)
-- [x] 支持Web性能监控 [@zyf2e/monitor-web-performance](https://github.com/clouDr-f2e/mitojs/tree/master/packages/web-performance)
-- [x] 支持微信小程序性能监控 [@zyf2e/monitor-wx-mini-performance](https://github.com/clouDr-f2e/mitojs/tree/master/packages/wx-mini-performance)
+- [x] 支持原生Web [@supaur/qdjk-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
+- [x] 支持Web框架（Vue3、Vue2、React@Next） [@supaur/qdjk-web](https://github.com/clouDr-f2e/mitojs/tree/master/packages/web)
+- [x] 支持原生微信小程序、支持uni-app等微信小程序框架 [@supaur/qdjk-wx-mini](https://github.com/clouDr-f2e/mitojs/tree/master/packages/wx-mini)
+- [x] 支持Web性能监控 [@supaur/qdjk-web-performance](https://github.com/clouDr-f2e/mitojs/tree/master/packages/web-performance)
+- [x] 支持微信小程序性能监控 [@supaur/qdjk-wx-mini-performance](https://github.com/clouDr-f2e/mitojs/tree/master/packages/wx-mini-performance)
 
 ## 安装
 
@@ -43,25 +43,25 @@
 #### 使用npm
 
 ```bash
-$ npm i @zyf2e/monitor-web
+$ npm i @supaur/qdjk-web
 ```
 
 ### 使用yarn
 
 ```bash
-$ yarn add @zyf2e/monitor-web
+$ yarn add @supaur/qdjk-web
 ```
 
 ### web-performance
 
 ```bash
-$ npm i @zyf2e/monitor-web-performance
+$ npm i @supaur/qdjk-web-performance
 ```
 
 ### 使用yarn
 
 ```bash
-$ yarn add @zyf2e/monitor-web-performance
+$ yarn add @supaur/qdjk-web-performance
 ```
 
 ### wx-mini
@@ -69,13 +69,13 @@ $ yarn add @zyf2e/monitor-web-performance
 #### 使用npm
 
 ```bash
-$ npm i @zyf2e/monitor-wx-mini
+$ npm i @supaur/qdjk-wx-mini
 ```
 
 ### 使用yarn
 
 ```bash
-$ yarn add @zyf2e/monitor-wx-mini
+$ yarn add @supaur/qdjk-wx-mini
 ```
 
 ## 使用指南

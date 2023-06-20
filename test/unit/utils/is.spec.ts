@@ -1,4 +1,4 @@
-import { isEmpty } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { isEmpty } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('is.ts', () => {
   it('should isEmpty func work', () => {

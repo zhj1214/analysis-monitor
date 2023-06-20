@@ -1,5 +1,5 @@
-import { options, setTraceId } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { _support } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { options, setTraceId } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { _support } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('options.ts', () => {
   it('should setTraceId func work', () => {

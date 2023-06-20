@@ -1,10 +1,10 @@
-// import { HandleEvents } from '../../browser/dist/browser' //'@zyf2e/monitor-browser'
-import { HandleEvents } from '@supaur/qdjk-browser' //'@zyf2e/monitor-browser'
+// import { HandleEvents } from '../../browser/dist/browser' //'@supaur/qdjk-browser'
+import { HandleEvents } from '@supaur/qdjk-browser' //'@supaur/qdjk-browser'
 
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { breadcrumb, httpTransform, transportData } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
-import { MITOHttp, EMethods } from '@zhj/monitor-types' // '@zyf2e/monitor-types'
-import { getTimestamp, Severity } from '@zhj/monitor-utils' // '@zyf2e/monitor-utils'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { breadcrumb, httpTransform, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { MITOHttp, EMethods } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { getTimestamp, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('handleEvents.ts', () => {
   afterEach(() => {

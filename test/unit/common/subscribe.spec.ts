@@ -1,5 +1,5 @@
-import { EVENTTYPES } from '@zhj/monitor-shared' // '@zyf2e/monitor-shared'
-import { subscribeEvent, triggerHandlers } from '@zhj/monitor-core' // '@zyf2e/monitor-core'
+import { EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { subscribeEvent, triggerHandlers } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 
 describe('subscribe.ts', () => {
   it('should subscribe work', () => {

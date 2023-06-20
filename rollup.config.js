@@ -27,14 +27,14 @@ const name = path.basename(packageDir)
 // const pathResolve = (p) => path.resolve(packageDir, p)
 
 // major name
-const M = '@zyf2e/monitor'
+const M = '@supaur/qdjk'
 const packageDirs = fs.readdirSync(packagesDir)
 const paths = {}
 packageDirs.forEach((dir) => {
   // filter hidden files
   if (dir.startsWith('.')) return
   // paths[`${M}/${dir}`] = [`${packagesDir}/${dir}/src`]
-  paths[`@zyf2e/monitor-${dir}`] = [`${packagesDir}/${dir}/src`]
+  paths[`@supaur/qdjk-${dir}`] = [`${packagesDir}/${dir}/src`]
 })
 
 const common = {
