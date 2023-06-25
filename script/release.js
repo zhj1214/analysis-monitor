@@ -48,8 +48,13 @@ async function publicPackage(pkgName) {
       //   cwd: pkgRoot,
       //   stdio: 'pipe'
       // })
+      // // 先升级一个版本（没有使用）
+      // await binRun('npm', ['version', 'patch'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
       // supaur registry
-      await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://npm.supaur.top'], {
+      await binRun('npm', ['publish', '--registry', 'http://npm.supaur.top'], {
         cwd: pkgRoot,
         stdio: 'pipe'
       })

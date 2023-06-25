@@ -1,6 +1,6 @@
 {
   "name": "@supaur/qdjk-types",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@supaur/qdjk-types",
   "author": "cjinhuo",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "dist"
   ],
   "dependencies": {
-    "@supaur/qdjk-core": "0.0.1",
-    "@supaur/qdjk-utils": "0.0.1",
-    "@supaur/qdjk-browser": "0.0.1",
-    "@supaur/qdjk-shared": "0.0.1"
+    "@supaur/qdjk-core": "0.0.2",
+    "@supaur/qdjk-utils": "0.0.2",
+    "@supaur/qdjk-browser": "0.0.2",
+    "@supaur/qdjk-shared": "0.0.2"
   }
 }

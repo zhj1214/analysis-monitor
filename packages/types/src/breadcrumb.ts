@@ -3,6 +3,7 @@ import { BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ReportDataType } from './transportData'
 import { Replace } from './replace'
 import { TNumStrObj } from './common'
+import { InitOptions } from './options' // '@supaur/qdjk-types'
 
 export interface BreadcrumbPushData {
   /**
@@ -17,4 +18,17 @@ export interface BreadcrumbPushData {
   category?: string
   time?: number
   level: Severity
+}
+
+export interface Breadcrumb {
+  maxBreadcrumb: Number
+  beforePushBreadcrumbFn?: unknown
+  stack: BreadcrumbPushData[]
+  push(data: BreadcrumbPushData): void
+  immediatePush(data: BreadcrumbPushData): void
+  shift(): Boolean
+  clear(): void
+  getStack(): BreadcrumbPushData[]
+  getCategory(type: BREADCRUMBTYPES): void
+  bindOptions(options?: InitOptions): void
 }

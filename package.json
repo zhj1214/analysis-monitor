@@ -79,13 +79,13 @@
     }
   },
   "dependencies": {
-    "@supaur/qdjk-browser": "0.0.1",
-    "@supaur/qdjk-core": "0.0.1",
-    "@supaur/qdjk-react": "0.0.1",
-    "@supaur/qdjk-shared": "0.0.1",
-    "@supaur/qdjk-types": "0.0.1",
-    "@supaur/qdjk-utils": "0.0.1",
-    "@supaur/qdjk-vue": "0.0.1",
+    "@supaur/qdjk-browser": "0.0.2",
+    "@supaur/qdjk-core": "0.0.2",
+    "@supaur/qdjk-react": "0.0.2",
+    "@supaur/qdjk-shared": "0.0.2",
+    "@supaur/qdjk-types": "0.0.2",
+    "@supaur/qdjk-utils": "0.0.2",
+    "@supaur/qdjk-vue": "0.0.2",
     "core-js": "^3.19.1",
     "path-to-regexp": "^6.2.0"
   }

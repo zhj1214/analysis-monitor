@@ -107,7 +107,7 @@ export enum EVENTTYPES {
   DOM = 'dom',
   HISTORY = 'history',
   ERROR = 'error',
-  HASHCHANGE = 'hashchange',
+  HASHCHANGE = 'hashchange', // has路由变化
   UNHANDLEDREJECTION = 'unhandledrejection',
   MITO = 'mito',
   VUE = 'Vue',
