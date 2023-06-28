@@ -1,9 +1,10 @@
 {
-  "version": "2.1.54",
+  "version": "0.0.3",
   "private": true,
   "license": "MIT",
   "author": "cjinhuo",
   "scripts": {
+    "build:module": "rollup -c --environment TARGET:shared,TYPES:true,LOCALDIR:undefined",
     "build": "node script/build.js",
     "watch": "node script/build.js --watch=true",
     "version": "node script/version.js",
@@ -78,14 +79,15 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "版本比较": "^1.2.3  <=>  >=1.2.3 <2.0.0、^0.2.3  <=>  >=0.2.3 <0.3.0、^0.0.3  <=>  >=0.0.3 <0.0.4、^1.2.x  <=>  >=1.2.0 <2.0.0、^0.0.x  <=>  >=0.0.0 <0.1.0",
   "dependencies": {
-    "@supaur/qdjk-browser": "0.0.2",
-    "@supaur/qdjk-core": "0.0.2",
-    "@supaur/qdjk-react": "0.0.2",
-    "@supaur/qdjk-shared": "0.0.2",
-    "@supaur/qdjk-types": "0.0.2",
-    "@supaur/qdjk-utils": "0.0.2",
-    "@supaur/qdjk-vue": "0.0.2",
+    "@supaur/qdjk-browser": "^0.0.x",
+    "@supaur/qdjk-core": "^0.0.x",
+    "@supaur/qdjk-react": "^0.0.x",
+    "@supaur/qdjk-shared": "^0.0.x",
+    "@supaur/qdjk-types": "^0.0.x",
+    "@supaur/qdjk-utils": "^0.0.x",
+    "@supaur/qdjk-vue": "^0.0.x",
     "core-js": "^3.19.1",
     "path-to-regexp": "^6.2.0"
   }

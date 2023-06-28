@@ -1,4 +1,4 @@
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-utils'
 
 describe('Severity.ts', () => {
   it('should fromString func work', () => {

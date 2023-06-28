@@ -1,9 +1,7 @@
 import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { vueUrl } from '@/test/config'
-import { TransportDataType, BreadcrumbPushData, ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { TransportDataType, BreadcrumbPushData, ReportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 import puppeteer from 'puppeteer'
-import {} from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 describe('Vue e2e', () => {
   const timeout = 3000

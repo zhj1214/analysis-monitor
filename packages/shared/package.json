@@ -1,12 +1,15 @@
 {
   "name": "@supaur/qdjk-shared",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@supaur/qdjk-shared",
   "author": "cjinhuo",
   "license": "MIT",
   "main": "dist/shared.js",
   "module": "dist/shared.esm.js",
   "types": "dist/shared.d.ts",
+  "scripts": {
+    "build": "sh ../../build-module.sh shared"
+  },
   "files": [
     "dist"
   ]

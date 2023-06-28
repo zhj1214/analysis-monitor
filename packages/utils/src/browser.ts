@@ -1,8 +1,7 @@
 import { EVENTTYPES, ERRORTYPES, WxAppEvents, WxPageEvents } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { getLocationHref, getTimestamp } from './helpers'
 import { setFlag } from './global'
-import { ReportDataType, InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { Severity } from './Severity'
+import { ReportDataType, InitOptions, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 /**
  * 返回包含id、class、innerTextde字符串的标签

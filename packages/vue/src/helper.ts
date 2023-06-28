@@ -1,8 +1,8 @@
-import { getBigVersion, getLocationHref, getTimestamp, variableTypeDetection, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { getBigVersion, getLocationHref, getTimestamp, variableTypeDetection } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { ERRORTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ViewModel, VueInstance } from './types'
 import { breadcrumb, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { ReportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 export function handleVueError(
   err: Error,

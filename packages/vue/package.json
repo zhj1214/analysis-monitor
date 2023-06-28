@@ -1,6 +1,6 @@
 {
   "name": "@supaur/qdjk-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A SDK for monitoring Vue errors",
   "author": "cjinhuo",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "dist"
   ],
   "dependencies": {
-    "@supaur/qdjk-core": "0.0.2",
-    "@supaur/qdjk-utils": "0.0.2",
-    "@supaur/qdjk-shared": "0.0.2",
-    "@supaur/qdjk-types": "0.0.2"
+    "@supaur/qdjk-core": "^0.0.x",
+    "@supaur/qdjk-utils": "^0.0.x",
+    "@supaur/qdjk-shared": "^0.0.x",
+    "@supaur/qdjk-types": "^0.0.x"
   }
 }

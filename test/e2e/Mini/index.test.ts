@@ -1,9 +1,8 @@
 import MiniProgram from 'miniprogram-automator/out/MiniProgram'
 import Page from 'miniprogram-automator/out/Page'
-import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace,Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 import automator from 'miniprogram-automator'
 import { resolve } from 'path'
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, HTTPTYPE, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ServerUrls } from '../../../examples/server/config'
 

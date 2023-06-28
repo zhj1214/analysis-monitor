@@ -1,14 +1,6 @@
-// const path = require('path')
-// const chalk = require('chalk')
-// const fs = require('fs-extra')
-// nodejs模块：fs-extra 是 fs模块的扩展，提供了更多便利的 API，并继承了fs模块的 API
-const fs = require('fs-extra')
+const fs = require('fs-extra') // nodejs模块：fs-extra 是 fs模块的扩展，提供了更多便利的 API，并继承了fs模块的 API
 const path = require('path') /** nodejs模块：提供文件路径相关api */
 const chalk = require('chalk') /** nodejs模块：作用是修改控制台中字符串的样式 */
-// const execa = require('execa') /* 详细解释见调用处 */
-// const { gzipSync } = require('zlib') /* nodejs模块: 使用 Gzip 压缩数据块 */
-// const { compress } = require('brotli') /* google 开源的 brotli 压缩算法 */
-// const { targets: allTargets, fuzzyMatchTarget } = require('./utils')
 
 const { targets: allTargets, fuzzyMatchTarget, getArgv, binRun } = require('./utils')
 let buildTypes = true
@@ -33,16 +25,7 @@ async function run() {
 
 function buildAll(targets) {
   console.log('--targets--', targets)
-
-  runParallel(10, targets, rollupBuild).then((res) => {
-    console.log('tsc全部编译完成')
-    setTimeout(() => {
-      res &&
-        res.forEach((element) => {
-          element && next(element)
-        })
-    }, 1000)
-  })
+  // runParallel(10, targets, rollupBuild)
 }
 
 async function runParallel(maxConcurrency, sources, iteratorFn) {
@@ -108,8 +91,8 @@ async function rollupBuild(target) {
     // { stdio: 'inherit' }
   ]
   rollupWatch && args.push('--watch')
-  console.log('打包参数args：',args);
-  return
+  // console.log('args--',args);
+  
   const result = await binRun('rollup', args)
   console.log(chalk.bold(chalk.red(`Rolling 编译完成  ${target}...`)))
   return target

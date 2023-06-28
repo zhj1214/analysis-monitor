@@ -1,7 +1,7 @@
 import { ERRORTYPES, HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { httpTransform, resourceTransform, getRealPath } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { EMethods, MITOHttp, ResourceErrorTarget } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { getLocationHref, fromHttpStatus, Severity, interceptStr } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { EMethods, MITOHttp, ResourceErrorTarget, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { getLocationHref, fromHttpStatus, interceptStr } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('transformData.ts', () => {
   it('should resourceTransform func work', () => {

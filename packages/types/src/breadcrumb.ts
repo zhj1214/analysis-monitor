@@ -1,4 +1,4 @@
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { Severity } from './severity'
 import { BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { ReportDataType } from './transportData'
 import { Replace } from './replace'
@@ -29,6 +29,6 @@ export interface Breadcrumb {
   shift(): Boolean
   clear(): void
   getStack(): BreadcrumbPushData[]
-  getCategory(type: BREADCRUMBTYPES): void
+  getCategory(type: BREADCRUMBTYPES): string
   bindOptions(options?: InitOptions): void
 }

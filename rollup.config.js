@@ -1,10 +1,10 @@
-import json from '@rollup/plugin-json'
+import json from '@rollup/plugin-json' // 它允许 Rollup 从 JSON 文件导入数据
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import clear from 'rollup-plugin-clear'
-import cleanup from 'rollup-plugin-cleanup'
+import cleanup from 'rollup-plugin-cleanup' // 是一个用于清理、优化和压缩 JavaScript 代码的 Rollup 插件
 import size from 'rollup-plugin-sizes'
 import { visualizer } from 'rollup-plugin-visualizer'
 
@@ -12,6 +12,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 const path = require('path')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs')
+
 if (!process.env.TARGET) {
   throw new Error('TARGET package must be specified')
 }
@@ -40,24 +41,27 @@ packageDirs.forEach((dir) => {
 const common = {
   input: `${packageDir}/src/index.ts`,
   output: {
-    banner: `/* ${M}-${name} version ' + ${masterVersion} */`,
-    footer: '/* follow me on Github! @cjinhuo */'
+    banner: `/* ${M}-${name} version ' + ${masterVersion} */`, // 压缩包-头部注释
+    footer: '/* Thank you for your support！ */' // 压缩包-尾部注释
   },
-  external: [...Object.keys(paths)],
+  external: [...Object.keys(paths)], // 通过script引入包
   plugins: [
-    resolve(),
+    resolve(), //  Rollup 如何查找外部模块
     size(),
+    // 分析插件
     visualizer({
       title: `${M} analyzer`,
       filename: 'analyzer.html'
     }),
+    // 将commonjs的库装换为es6的库
     commonjs({
       exclude: 'node_modules'
     }),
     json(),
     cleanup({
-      comments: 'none'
+      comments: 'none' // 用于设置是否移除特定类型的注释。可以使用字符串或正则表达式来指定需要移除的注释类型。
     }),
+    // ts 插件配置
     typescript({
       tsconfig: 'tsconfig.build.json',
       useTsconfigDeclarationDir: true,

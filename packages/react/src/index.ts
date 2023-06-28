@@ -1,7 +1,7 @@
 import { BREADCRUMBTYPES, ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { isError, extractErrorStack, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { isError, extractErrorStack } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { breadcrumb, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { ReportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 /**
  * 收集react ErrorBoundary中的错误对象

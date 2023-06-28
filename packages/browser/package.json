@@ -1,6 +1,6 @@
 {
   "name": "@supaur/qdjk-browser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A SDK For Monitoring Browser Errors",
   "author": "cjinhuo",
   "license": "MIT",
@@ -11,10 +11,10 @@
     "dist"
   ],
   "dependencies": {
-    "@supaur/qdjk-utils": "0.0.2",
-    "@supaur/qdjk-core": "0.0.2",
-    "@supaur/qdjk-shared": "0.0.2",
-    "@supaur/qdjk-types": "0.0.2"
+    "@supaur/qdjk-utils": "^0.0.x",
+    "@supaur/qdjk-core": "^0.0.x",
+    "@supaur/qdjk-shared": "^0.0.x",
+    "@supaur/qdjk-types": "^0.0.x"
   },
   "buildOptions": {
     "formats": [

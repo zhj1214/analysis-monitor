@@ -1,7 +1,6 @@
 import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { breadcrumb } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { BreadcrumbPushData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { BreadcrumbPushData, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 describe('breadcrumb.ts', () => {
   beforeAll(() => {

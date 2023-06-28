@@ -1,6 +1,6 @@
 import { BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { breadcrumb, log } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-utils'
 
 describe('external log function', () => {
   it('should log func work', () => {

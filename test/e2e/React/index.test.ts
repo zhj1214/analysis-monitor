@@ -1,7 +1,7 @@
 import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { reactUrl } from '@/test/config'
-import { ReportDataType, TransportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { ReportDataType, TransportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+
 import puppeteer from 'puppeteer'
 import { BreadcrumbPushData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 

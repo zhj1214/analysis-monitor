@@ -6,12 +6,11 @@ import {
   getTimestamp,
   unknownToString,
   isWxMiniEnv,
-  Severity,
   getCurrentRoute
 } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { transportData } from './transportData'
 import { breadcrumb } from './breadcrumb'
-import { TNumStrObj } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { TNumStrObj, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 
 interface LogTypes {
   message: TNumStrObj

@@ -1,6 +1,6 @@
 {
   "name": "@supaur/qdjk-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "@supaur/qdjk-types",
   "author": "cjinhuo",
   "license": "MIT",
@@ -10,10 +10,10 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build":"node script/update.js"
+  },
   "dependencies": {
-    "@supaur/qdjk-core": "0.0.2",
-    "@supaur/qdjk-utils": "0.0.2",
-    "@supaur/qdjk-browser": "0.0.2",
-    "@supaur/qdjk-shared": "0.0.2"
+    "@supaur/qdjk-shared": "^0.0.x"
   }
 }

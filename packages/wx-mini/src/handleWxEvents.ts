@@ -1,6 +1,6 @@
 import { BREADCRUMBTYPES, ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { breadcrumb, handleConsole, httpTransform, transportData, options as sdkOptions } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { ReportDataType, Replace, MITOHttp } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { ReportDataType, Replace, MITOHttp, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
 import {
   extractErrorStack,
   getCurrentRoute,
@@ -9,8 +9,7 @@ import {
   isHttpFail,
   parseErrorString,
   unknownToString,
-  _support,
-  Severity
+  _support
 } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { getWxMiniDeviceInfo, targetAsString } from './utils'
 import { MiniRoute, WxLifeCycleBreadcrumb, WxOnShareAppMessageBreadcrumb, WxOnTabItemTapBreadcrumb } from './types'

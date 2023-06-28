@@ -1,5 +1,6 @@
 import { HandleEvents } from './handleEvents'
-import { htmlElementAsString, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { Severity } from '@supaur/qdjk-types'
+import { htmlElementAsString } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 import { EVENTTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { breadcrumb, handleConsole } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
 import { addReplaceHandler } from './replace'

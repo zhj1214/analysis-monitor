@@ -1,13 +1,47 @@
-import { ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { voidFun } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { BreadcrumbPushData } from './breadcrumb'
 import { DeviceInfo, EActionType } from './track'
-
+import { InitOptions } from './options'
 export interface AuthInfo {
   apikey?: string
   trackKey?: string
   sdkVersion: string
   sdkName: string
   trackerId: string
+}
+export interface Queue {
+  addFn(fn: voidFun): void
+  clear(): void
+  getStack(): void
+  flushStack(): void
+}
+
+export interface TransportData {
+  queue: Queue
+  beforeDataReport: unknown
+  backTrackerId: unknown
+  configReportXhr: unknown
+  configReportUrl: unknown
+  configReportWxRequest: unknown
+  useImgUpload: boolean
+  apikey: string
+  trackKey: string
+  errorDsn: string
+  trackDsn: string
+  imgRequest(data: any, url: string): void
+  getRecord(): any[]
+  getDeviceInfo(): DeviceInfo | any
+  beforePost(data: FinalReportType): void
+  xhrPost(data: any, url: string): void
+  wxPost(data: any, url: string)
+  getAuthInfo(): AuthInfo
+  getApikey(): void
+  getTrackKey(): void
+  getTrackerId(): string | number
+  getTransportData(data: FinalReportType): TransportDataType
+  isSdkTransportUrl(targetUrl: string): boolean
+  bindOptions(options?: InitOptions): void
+  send(data: FinalReportType): void
 }
 
 export interface TransportDataType {

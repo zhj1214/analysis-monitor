@@ -3,8 +3,8 @@ import { HandleEvents } from '@supaur/qdjk-browser' //'@supaur/qdjk-browser'
 
 import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
 import { breadcrumb, httpTransform, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { MITOHttp, EMethods } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { getTimestamp, Severity } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { MITOHttp, EMethods, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { getTimestamp } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
 
 describe('handleEvents.ts', () => {
   afterEach(() => {
