@@ -11,7 +11,7 @@
     "dist"
   ],
   "scripts": {
-    "build":"node script/update.js"
+    "build": "sh ../../script/build-module.sh types"
   },
   "dependencies": {
     "@supaur/qdjk-shared": "^0.0.x"

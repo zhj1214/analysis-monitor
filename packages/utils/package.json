@@ -10,6 +10,9 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "sh ../../script/build-module.sh utils"
+  },
   "dependencies": {
     "@supaur/qdjk-shared": "^0.0.x",
     "@supaur/qdjk-types": "^0.0.x"

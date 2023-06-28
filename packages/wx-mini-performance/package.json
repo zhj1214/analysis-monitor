@@ -8,7 +8,9 @@
   "files": [
     "dist"
   ],
-  "author": "zty <https://github.com/zty1205>",
+  "scripts": {
+    "build": "sh ../../script/build-module.sh wx-mini-performance"
+  },
   "license": "ISC",
   "dependencies": {
     "@types/wechat-miniprogram": "^3.3.0"

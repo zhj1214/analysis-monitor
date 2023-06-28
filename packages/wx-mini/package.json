@@ -10,6 +10,9 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "sh ../../script/build-module.sh wx-mini"
+  },
   "dependencies": {
     "@supaur/qdjk-core": "^0.0.x",
     "@supaur/qdjk-utils": "^0.0.x",
