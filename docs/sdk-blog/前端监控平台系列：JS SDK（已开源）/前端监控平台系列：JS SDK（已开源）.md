@@ -1,4 +1,4 @@
-**本文作者：[cjinhuo](https://github.com/cjinhuo)，未经授权禁止转载。**
+**本文作者：[zhj1214](https://github.com/)，未经授权禁止转载。**
 
 <h1 style="padding: 0px; font-weight: bold; color: black; font-size: 24px; text-align: center; line-height: 60px; margin-top: 10px; margin-bottom: 10px;">
   <span style="color: #2db7f5; border-bottom: 2px solid #2db7f5;" class="content">背景</span>
@@ -9,9 +9,9 @@
 
 传统方式下一个前端项目发到正式环境后，所有报错信息只能通过用户使用时截图、口头描述发送到开发者，然后开发者来根据用户所描述的场景去模拟这个错误的产生，这效率肯定超级低，所以很多开源或收费的前端监控平台就应运而生，比如:
 
-* [sentry](https://github.com/getsentry/sentry) 
+* [sentry](https://github.com/getsentry/sentry)
 * [webfunny](https://github.com/a597873885/webfunny_monitor)
-* [fundebug](https://www.fundebug.com/) 
+* [fundebug](https://www.fundebug.com/)
 
 等等一些优秀的监控平台
 

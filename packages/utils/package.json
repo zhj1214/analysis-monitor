@@ -1,8 +1,8 @@
 {
   "name": "@supaur/qdjk-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@supaur/qdjk-utils",
-  "author": "cjinhuo",
+  "author": "zhj1214",
   "license": "MIT",
   "main": "dist/utils.js",
   "module": "dist/utils.esm.js",

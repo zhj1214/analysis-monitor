@@ -1,8 +1,8 @@
 {
   "name": "@supaur/qdjk-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A SDK For Report React ErrorBoundary",
-  "author": "cjinhuo",
+  "author": "zhj1214",
   "license": "MIT",
   "main": "dist/react.js",
   "module": "dist/react.esm.js",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh react"
   },
   "dependencies": {
-    "@supaur/qdjk-core": "^0.0.x",
-    "@supaur/qdjk-utils": "^0.0.x",
+    "@supaur/qdjk-core": "^0.0.4",
+    "@supaur/qdjk-utils": "^0.0.4",
     "@supaur/qdjk-shared": "^0.0.x"
   }
 }

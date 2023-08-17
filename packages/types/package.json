@@ -2,7 +2,7 @@
   "name": "@supaur/qdjk-types",
   "version": "0.0.3",
   "description": "@supaur/qdjk-types",
-  "author": "cjinhuo",
+  "author": "zhj1214",
   "license": "MIT",
   "main": "dist/types.js",
   "module": "dist/types.esm.js",

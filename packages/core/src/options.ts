@@ -10,7 +10,7 @@ export class Options {
   filterXhrUrlRegExp: RegExp // 默认为空，所有ajax都会被监听，不为空时，filterXhrUrlRegExp.test(xhr.url)为true时过滤
 
   throttleDelayTime = 0 //  `0` | 默认会收集`click`到的标签，该参数可以设置按钮点击节流时间
-  maxDuplicateCount = 2 // 最多可重复上报同一个错误的次数
+  maxDuplicateCount = 1 // 最多可重复上报同一个错误的次数
   // wx-mini wx小程序的App下的 onxxx 执行完后再执行以下hook
   appOnLaunch: Function = () => {}
   appOnShow: Function = () => {}

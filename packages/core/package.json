@@ -1,8 +1,8 @@
 {
   "name": "@supaur/qdjk-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "@supaur/qdjk-core",
-  "author": "cjinhuo",
+  "author": "zhj1214",
   "license": "MIT",
   "main": "dist/core.js",
   "module": "dist/core.esm.js",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@supaur/qdjk-types": "^0.0.x",
-    "@supaur/qdjk-utils": "^0.0.x",
+    "@supaur/qdjk-utils": "^0.0.4",
     "@supaur/qdjk-shared": "^0.0.x"
   }
 }

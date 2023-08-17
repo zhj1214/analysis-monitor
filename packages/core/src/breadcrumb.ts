@@ -81,9 +81,11 @@ export class Breadcrumb {
   // 设置Breadcrumb
   bindOptions(options: InitOptions = {}): void {
     // const { maxBreadcrumbs, beforePushBreadcrumb } = options
-    validateOption(options.maxBreadcrumbs, 'maxBreadcrumb', 'number') && (this.maxBreadcrumb = options.maxBreadcrumbs)
-    validateOption(options.beforePushBreadcrumb, 'beforePushBreadcrumbFn', 'function') &&
-      (this.beforePushBreadcrumbFn = options.beforePushBreadcrumb)
+    if (options.maxBreadcrumbs)
+      validateOption(options.maxBreadcrumbs, 'maxBreadcrumb', 'number') && (this.maxBreadcrumb = options.maxBreadcrumbs)
+    if (options.beforePushBreadcrumb)
+      validateOption(options.beforePushBreadcrumb, 'beforePushBreadcrumb', 'function') &&
+        (this.beforePushBreadcrumbFn = options.beforePushBreadcrumb)
   }
 }
 const breadcrumb = _support.breadcrumb || (_support.breadcrumb = new Breadcrumb())

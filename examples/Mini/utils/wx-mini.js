@@ -1980,5 +1980,5 @@ exports.init = init;
 exports.log = log;
 exports.sendTrackData = sendTrackData;
 exports.track = track;
-/* follow me on Github! @cjinhuo */
+/* follow me on Github! @zhj1214 */
 //# sourceMappingURL=wx-mini.js.map

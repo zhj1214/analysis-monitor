@@ -109,7 +109,7 @@ async function rollupBuild(target) {
   ]
   rollupWatch && args.push('--watch')
   console.log('打包参数args：',args);
-  return
+  // return
   const result = await binRun('rollup', args)
   console.log(chalk.bold(chalk.red(`Rolling 编译完成  ${target}...`)))
   return target

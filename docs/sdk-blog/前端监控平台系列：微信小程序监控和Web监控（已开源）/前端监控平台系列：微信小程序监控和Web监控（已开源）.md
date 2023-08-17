@@ -1,4 +1,4 @@
-**本文作者：[cjinhuo](https://github.com/cjinhuo)，未经授权禁止转载。**
+**本文作者：[zhj1214](https://github.com/)，未经授权禁止转载。**
 
 <h1 style="padding: 0px; font-weight: bold; color: black; font-size: 24px; text-align: center; line-height: 60px; margin-top: 10px; margin-bottom: 10px;">
   <span style="color: #2db7f5; border-bottom: 2px solid #2db7f5;" class="content">背景</span>

@@ -1172,5 +1172,5 @@ var WxPerformance = (function () {
 })()
 
 exports.WxPerformance = WxPerformance
-/* follow me on Github! @cjinhuo */
+/* follow me on Github! @zhj1214 */
 //# sourceMappingURL=wx-mini-performance.js.map
