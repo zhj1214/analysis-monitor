@@ -37,8 +37,9 @@ export namespace Severity {
       case Severity.Critical:
       case 'error':
         return Severity.Error
-      default:
+      default: {
         return Severity.Else
+      }
     }
   }
 }

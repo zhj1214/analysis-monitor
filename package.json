@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "zhj1214",
   "scripts": {
-    "build:module": "rollup -c --environment TARGET:vue,TYPES:true,LOCALDIR:undefined",
+    "build:module": "rollup -c --environment TARGET:browser,TYPES:true,LOCALDIR:undefined",
     "build": "node script/build.js",
     "watch": "node script/build.js --watch=true",
     "version": "node script/version.js",
