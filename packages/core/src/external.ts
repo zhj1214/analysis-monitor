@@ -1,4 +1,4 @@
-import { ERRORTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { ERRORTYPES, BREADCRUMBTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import {
   isError,
   extractErrorStack,
@@ -7,10 +7,10 @@ import {
   unknownToString,
   isWxMiniEnv,
   getCurrentRoute
-} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+} from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 import { transportData } from './transportData'
 import { breadcrumb } from './breadcrumb'
-import { TNumStrObj, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { TNumStrObj, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 interface LogTypes {
   message: TNumStrObj

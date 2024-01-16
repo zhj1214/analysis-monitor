@@ -1,5 +1,5 @@
 {
-  "name": "@supaur/qdjk-wx-mini-performance",
+  "name": "@zhj1214/qdjk-wx-mini-performance",
   "version": "0.0.3",
   "description": "A SDK For Report Wx Mini Performance",
   "main": "dist/wx-mini-performance.js",

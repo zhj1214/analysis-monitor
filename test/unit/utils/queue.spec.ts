@@ -1,4 +1,4 @@
-import { Queue } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { Queue } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('queue.ts', () => {
   it('should queue class work', (done) => {

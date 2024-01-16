@@ -23,7 +23,7 @@
 
 ### 使用npm
 
-`npm i @supaur/qdjk-web`
+`npm i @zhj1214/qdjk-web`
 
 ### 使用CDN
 
@@ -36,7 +36,7 @@
 **main.js**
 
 ```javascript
-import * as MITO from '@supaur/qdjk-web'
+import * as MITO from '@zhj1214/qdjk-web'
 import Vue from 'vue'
 Vue.use(MITO.MitoVue)
 MITO.init({
@@ -79,7 +79,7 @@ window.Vue = Vue
 ```javascript
 import App from './App.vue';
 import {createApp} from 'vue';
-import MITO from '@supaur/qdjk-web'
+import MITO from '@zhj1214/qdjk-web'
 const app = createApp(App);
 app.use(MITO.MitoVue)
 MITO.init({
@@ -146,7 +146,7 @@ app.mount('#app');
 ### NPM包形式
 
 ```js
-import * as MITO from '@supaur/qdjk-web';
+import * as MITO from '@zhj1214/qdjk-web';
 MITO.init({
   // 服务器接口地址
   dsn: 'http://test.com/error',
@@ -160,7 +160,7 @@ MITO.init({
 **如果你想要使用ErrorBoundary**
 
 ```js
-import * as MITO from '@supaur/qdjk-web';
+import * as MITO from '@zhj1214/qdjk-web';
 import React from 'react';
 
 class ErrorBoundary extends React.Component {
@@ -216,13 +216,13 @@ class ErrorBoundary extends React.Component {
 
 如果你用类似`uni-app`框架，推荐使用`npm包`的形式来引入（v1.2.4以上支持微信小程序）
 
-`npm i @supaur/qdjk-wx-mini @supaur/qdjk-vue`
+`npm i @zhj1214/qdjk-wx-mini @zhj1214/qdjk-vue`
 
 **main.js**
 
 ```js
-import * as MITO from '@supaur/qdjk-wx-mini';
-import { MitoVue } from '../../vue/dist/vue' // '@supaur/qdjk-vue'
+import * as MITO from '@zhj1214/qdjk-wx-mini';
+import { MitoVue } from '../../vue/dist/vue' // '@zhj1214/qdjk-vue'
 import Vue from 'vue';
 // 捕捉Vue框架抛出的错误
 Vue.use(MitoVue);
@@ -252,7 +252,7 @@ MITO.init({
 ### MITO.log
 有时我们需要在某个业务代码中上报业务信息或者是埋点信息，这时可以用到`MITO.log`手动上报，下面这个例子就是在获取支付状态的接口是否异常，如果异常就上报异常信息。
 ```js
-import * as MITO from '@supaur/qdjk-web'
+import * as MITO from '@zhj1214/qdjk-web'
 
 $api.getPayStatus().then(res => {
   if (res.success) {
@@ -274,7 +274,7 @@ $api.getPayStatus().then(res => {
 ```
 还可以统计每个功能的浏览次数（PV）、用户量（UV），比如下面代码中在活动页埋点，UV的统计需要依赖`trackerId`，[trackerId详细配置](https://github.com/clouDr-f2e/mitojs/blob/master/docs/option.md#backtrackerid)
 ```js
-import * as MITO from '@supaur/qdjk-web'
+import * as MITO from '@zhj1214/qdjk-web'
 
 /**
  * react hook 活动页

@@ -1,5 +1,5 @@
-import { EVENTTYPES, WxEvents } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { getFlag, getFunctionName, logger, nativeTryCatch, setFlag } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { EVENTTYPES, WxEvents } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { getFlag, getFunctionName, logger, nativeTryCatch, setFlag } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 export interface ReplaceHandler {
   type: EVENTTYPES | WxEvents
   callback: ReplaceCallback

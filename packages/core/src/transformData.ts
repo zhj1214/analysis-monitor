@@ -1,6 +1,6 @@
-import { BREADCRUMBTYPES, ERRORTYPES, globalVar } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { getLocationHref, getTimestamp, fromHttpStatus, SpanStatus, interceptStr } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { ReportDataType, MITOHttp, Replace, Severity, ResourceErrorTarget } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { BREADCRUMBTYPES, ERRORTYPES, globalVar } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { getLocationHref, getTimestamp, fromHttpStatus, SpanStatus, interceptStr } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { ReportDataType, MITOHttp, Replace, Severity, ResourceErrorTarget } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 import { getRealPath } from './errorId'
 import { breadcrumb } from './breadcrumb'
 

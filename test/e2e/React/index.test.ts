@@ -1,9 +1,9 @@
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { reactUrl } from '@/test/config'
-import { ReportDataType, TransportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { ReportDataType, TransportDataType, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 import puppeteer from 'puppeteer'
-import { BreadcrumbPushData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { BreadcrumbPushData } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 describe('React e2e', () => {
   const timeout = 3000

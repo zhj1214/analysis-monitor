@@ -3,11 +3,11 @@
 ## 一、安装
 使用npm
 ```bash
-npm i @supaur/qdjk-wx-mini-performance
+npm i @zhj1214/qdjk-wx-mini-performance
 ```
 使用yarn
 ```bash
-yarn add @supaur/qdjk-wx-mini-performance
+yarn add @zhj1214/qdjk-wx-mini-performance
 ```
 
 <br/>

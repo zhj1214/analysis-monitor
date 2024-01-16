@@ -1,5 +1,5 @@
-import { InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { InitOptions } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import { generateUUID, toStringValidateOption, validateOption, _support, setSilentFlag, logger } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 import { breadcrumb } from './breadcrumb'
 import { transportData } from './transportData'
 export class Options {

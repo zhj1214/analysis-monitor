@@ -1,6 +1,6 @@
-# @supaur/qdjk-core
+# @zhj1214/qdjk-core
 
-给`@supaur/qdjk`提供一系列的核心类与函数
+给`@zhj1214/qdjk`提供一系列的核心类与函数
 
 ### Breadcrumb
 收集用户行为

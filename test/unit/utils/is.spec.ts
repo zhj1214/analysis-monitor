@@ -1,4 +1,4 @@
-import { isEmpty } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { isEmpty } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('is.ts', () => {
   it('should isEmpty func work', () => {

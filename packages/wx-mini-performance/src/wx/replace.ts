@@ -1,4 +1,4 @@
-import { replaceOld, isEmptyObject } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { replaceOld, isEmptyObject } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 import Store from '../core/store'
 import HandleEvents from './handleEvents'
 import { WxPerformanceItemType, WxListenerTypes } from '../constant'

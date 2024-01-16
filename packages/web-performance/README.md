@@ -3,11 +3,11 @@
 ## 安装
 使用npm
 ```bash
-npm i @supaur/qdjk-web-performance
+npm i @zhj1214/qdjk-web-performance
 ```
 使用yarn
 ```bash
-yarn add @supaur/qdjk-web-performance
+yarn add @zhj1214/qdjk-web-performance
 ```
 使用cdn
 ```bash

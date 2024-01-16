@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "zhj1214",
   "scripts": {
-    "build:module": "rollup -c --environment TARGET:browser,TYPES:true,LOCALDIR:undefined",
+    "build:module": "rollup -c --environment TARGET:wx-mini,TYPES:true,LOCALDIR:undefined",
     "build": "node script/build.js",
     "watch": "node script/build.js --watch=true",
     "version": "node script/version.js",
@@ -81,13 +81,13 @@
   },
   "版本比较": "^1.2.3  <=>  >=1.2.3 <2.0.0、^0.2.3  <=>  >=0.2.3 <0.3.0、^0.0.3  <=>  >=0.0.3 <0.0.4、^1.2.x  <=>  >=1.2.0 <2.0.0、^0.0.x  <=>  >=0.0.0 <0.1.0",
   "dependencies": {
-    "@supaur/qdjk-browser": "^0.0.x",
-    "@supaur/qdjk-core": "^0.0.4",
-    "@supaur/qdjk-react": "^0.0.x",
-    "@supaur/qdjk-shared": "^0.0.x",
-    "@supaur/qdjk-types": "^0.0.x",
-    "@supaur/qdjk-utils": "^0.0.4",
-    "@supaur/qdjk-vue": "^0.0.x",
+    "@zhj1214/qdjk-browser": "^0.0.x",
+    "@zhj1214/qdjk-core": "^0.0.4",
+    "@zhj1214/qdjk-react": "^0.0.x",
+    "@zhj1214/qdjk-shared": "^0.0.x",
+    "@zhj1214/qdjk-types": "^0.0.x",
+    "@zhj1214/qdjk-utils": "^0.0.4",
+    "@zhj1214/qdjk-vue": "^0.0.x",
     "core-js": "^3.19.1",
     "path-to-regexp": "^6.2.0"
   }

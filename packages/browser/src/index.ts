@@ -2,10 +2,10 @@ export * from './handleEvents'
 export * from './load'
 export * from './replace'
 import { setupReplace } from './load'
-import { initOptions, log } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { _global } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { SDK_VERSION, SDK_NAME } from '@supaur/qdjk-shared'// '@supaur/qdjk-shared'
-import { InitOptions } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { initOptions, log } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { _global } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { SDK_VERSION, SDK_NAME } from '@zhj1214/qdjk-shared'// '@zhj1214/qdjk-shared'
+import { InitOptions } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 function webInit(options: InitOptions = {}): void {
   if (!('XMLHttpRequest' in _global) || options.disabled) return
   initOptions(options)

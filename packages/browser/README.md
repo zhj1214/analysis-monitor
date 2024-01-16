@@ -1,4 +1,4 @@
-# @supaur/qdjk-browser
+# @zhj1214/qdjk-browser
 
 - [x] 🔨监听请求错误
 - [x] 🔨console

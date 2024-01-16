@@ -1,6 +1,6 @@
-import { getAppId, isWxMiniEnv, variableTypeDetection } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { ERRORTYPES, EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { ReportDataType } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { getAppId, isWxMiniEnv, variableTypeDetection } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { ERRORTYPES, EVENTTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { ReportDataType } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 import { options } from './options'
 const allErrorNumber: unknown = {}
 /**

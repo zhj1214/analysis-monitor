@@ -1,6 +1,6 @@
-import { BREADCRUMBTYPES, ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { breadcrumb, handleConsole, httpTransform, transportData, options as sdkOptions } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { ReportDataType, Replace, MITOHttp, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { BREADCRUMBTYPES, ERRORTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { breadcrumb, handleConsole, httpTransform, transportData, options as sdkOptions } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { ReportDataType, Replace, MITOHttp, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 import {
   extractErrorStack,
   getCurrentRoute,
@@ -10,7 +10,7 @@ import {
   parseErrorString,
   unknownToString,
   _support
-} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+} from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 import { getWxMiniDeviceInfo, targetAsString } from './utils'
 import { MiniRoute, WxLifeCycleBreadcrumb, WxOnShareAppMessageBreadcrumb, WxOnTabItemTapBreadcrumb } from './types'
 import { ELinstenerTypes } from './constant'

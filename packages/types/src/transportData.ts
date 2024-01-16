@@ -1,4 +1,4 @@
-import { voidFun } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { voidFun } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { BreadcrumbPushData } from './breadcrumb'
 import { DeviceInfo, EActionType } from './track'
 import { InitOptions } from './options'

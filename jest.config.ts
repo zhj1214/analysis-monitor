@@ -22,7 +22,7 @@ export default {
     // alias src/(.*) not work
     // 从上到下优先匹配
     '@/test/(.*)': '<rootDir>/test/$1',
-    '@supaur/qdjk-(.*)': '<rootDir>/packages/$1/src/index'
+    '@zhj1214/qdjk-(.*)': '<rootDir>/packages/$1/src/index'
   },
   globalSetup: './test/config/setup.js',
   globalTeardown: './test/config/teardown.js',

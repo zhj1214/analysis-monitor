@@ -1,4 +1,4 @@
-import { EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { EVENTTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { HandleWxConsoleEvents, HandleNetworkEvents, HandleWxEvents, HandleWxPageEvents } from './handleWxEvents'
 import { addReplaceHandler, replaceApp, replacePage, replaceComponent, replaceBehavior } from './replace'
 

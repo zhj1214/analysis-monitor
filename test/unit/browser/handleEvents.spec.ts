@@ -1,10 +1,10 @@
-// import { HandleEvents } from '../../browser/dist/browser' //'@supaur/qdjk-browser'
-import { HandleEvents } from '@supaur/qdjk-browser' //'@supaur/qdjk-browser'
+// import { HandleEvents } from '../../browser/dist/browser' //'@zhj1214/qdjk-browser'
+import { HandleEvents } from '@zhj1214/qdjk-browser' //'@zhj1214/qdjk-browser'
 
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { breadcrumb, httpTransform, transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { MITOHttp, EMethods, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { getTimestamp } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, HTTPTYPE } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { breadcrumb, httpTransform, transportData } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { MITOHttp, EMethods, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import { getTimestamp } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('handleEvents.ts', () => {
   afterEach(() => {

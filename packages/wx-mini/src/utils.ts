@@ -1,5 +1,5 @@
-import { setUrlQuery, variableTypeDetection } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { DeviceInfo } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { setUrlQuery, variableTypeDetection } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { DeviceInfo } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 /**
  * 后退时需要计算当前页面地址

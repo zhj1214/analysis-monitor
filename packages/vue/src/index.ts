@@ -1,6 +1,6 @@
-import { getFlag, setFlag, slientConsoleScope } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { Severity } from '@supaur/qdjk-types'
+import { getFlag, setFlag, slientConsoleScope } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { EVENTTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { Severity } from '@zhj1214/qdjk-types'
 import { VueInstance, ViewModel } from './types'
 import { handleVueError } from './helper'
 

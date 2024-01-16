@@ -1,7 +1,7 @@
-import { EVENTTYPES, WxEvents } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { EVENTTYPES, WxEvents } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { Logger } from './logger'
 import { variableTypeDetection } from './is'
-import { DeviceInfo, Breadcrumb, TransportData, Options } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { DeviceInfo, Breadcrumb, TransportData, Options } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 // MITO的全局变量
 export interface MitoSupport {

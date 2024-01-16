@@ -1,5 +1,5 @@
-import { IAnyObject, IntegrationError } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { globalVar, HTTP_CODE, ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { IAnyObject, IntegrationError } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import { globalVar, HTTP_CODE, ERRORTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { logger } from './logger'
 import { nativeToString, variableTypeDetection } from './is'
 

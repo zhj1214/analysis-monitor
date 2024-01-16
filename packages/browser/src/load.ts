@@ -1,8 +1,8 @@
 import { HandleEvents } from './handleEvents'
-import { Severity } from '@supaur/qdjk-types'
-import { htmlElementAsString } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { EVENTTYPES, BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { breadcrumb, handleConsole } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
+import { Severity } from '@zhj1214/qdjk-types'
+import { htmlElementAsString } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { EVENTTYPES, BREADCRUMBTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { breadcrumb, handleConsole } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
 import { addReplaceHandler } from './replace'
 export function setupReplace(): void {
   addReplaceHandler({

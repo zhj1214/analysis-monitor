@@ -1,10 +1,10 @@
-# @supaur/qdjk-web
+# @zhj1214/qdjk-web
 
 整合:
 
-* [@supaur/qdjk-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
-* [@supaur/qdjk-react](https://github.com/clouDr-f2e/mitojs/tree/master/packages/react)
-* [@supaur/qdjk-vue](https://github.com/clouDr-f2e/mitojs/tree/master/packages/vue)
+* [@zhj1214/qdjk-browser](https://github.com/clouDr-f2e/mitojs/tree/master/packages/browser)
+* [@zhj1214/qdjk-react](https://github.com/clouDr-f2e/mitojs/tree/master/packages/react)
+* [@zhj1214/qdjk-vue](https://github.com/clouDr-f2e/mitojs/tree/master/packages/vue)
 
 ## 使用指南
 

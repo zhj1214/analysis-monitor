@@ -1,4 +1,4 @@
-import { fromHttpStatus, SpanStatus } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { fromHttpStatus, SpanStatus } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('httpStatus.ts', () => {
   it('should fromHttpStatus func work', () => {

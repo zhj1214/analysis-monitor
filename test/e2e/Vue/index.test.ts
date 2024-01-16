@@ -1,6 +1,6 @@
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, SDK_NAME, SDK_VERSION } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { vueUrl } from '@/test/config'
-import { TransportDataType, BreadcrumbPushData, ReportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { TransportDataType, BreadcrumbPushData, ReportDataType, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 import puppeteer from 'puppeteer'
 
 describe('Vue e2e', () => {

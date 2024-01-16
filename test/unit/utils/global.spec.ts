@@ -1,5 +1,5 @@
-import { EVENTTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { init } from '../../browser/dist/browser' //'@supaur/qdjk-browser'
+import { EVENTTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { init } from '../../browser/dist/browser' //'@zhj1214/qdjk-browser'
 import {
   getFlag,
   getGlobal,
@@ -9,7 +9,7 @@ import {
   isWxMiniEnv,
   setFlag,
   supportsHistory
-} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+} from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('global.ts', () => {
   it('should getGLoabl func work', () => {

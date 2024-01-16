@@ -1,6 +1,6 @@
-import { EActionType, ITrackBaseParam, TrackReportData } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { transportData } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { generateUUID, getTimestamp } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { EActionType, ITrackBaseParam, TrackReportData } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import { transportData } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { generateUUID, getTimestamp } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 export function track(actionType: EActionType, param: ITrackBaseParam) {
   const data = {

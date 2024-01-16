@@ -1,4 +1,4 @@
-# @supaur/qdjk-wx-mini
+# @zhj1214/qdjk-wx-mini
 
 ### 微信小程序
 

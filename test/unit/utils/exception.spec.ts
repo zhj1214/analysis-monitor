@@ -1,4 +1,4 @@
-import { nativeTryCatch } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { nativeTryCatch } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('exception.ts', () => {
   it('should nativeTryCatch func work', () => {

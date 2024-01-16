@@ -1,9 +1,9 @@
 import MiniProgram from 'miniprogram-automator/out/MiniProgram'
 import Page from 'miniprogram-automator/out/Page'
-import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace,Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { BreadcrumbPushData, EMethods, ReportDataType, TransportDataType, Replace,Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 import automator from 'miniprogram-automator'
 import { resolve } from 'path'
-import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, HTTPTYPE, SDK_NAME, SDK_VERSION } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { BREADCRUMBCATEGORYS, BREADCRUMBTYPES, ERRORTYPES, HTTPTYPE, SDK_NAME, SDK_VERSION } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { ServerUrls } from '../../../examples/server/config'
 
 describe('Min e2e:', () => {

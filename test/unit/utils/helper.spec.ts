@@ -1,4 +1,4 @@
-import { ERRORTYPES, globalVar } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { ERRORTYPES, globalVar } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import {
   defaultFunctionName,
   generateUUID,
@@ -16,7 +16,7 @@ import {
   typeofAny,
   unknownToString,
   validateOption
-} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+} from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('helper.ts', () => {
   it('should getLocationHref func work', () => {

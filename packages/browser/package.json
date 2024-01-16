@@ -1,5 +1,5 @@
 {
-  "name": "@supaur/qdjk-browser",
+  "name": "@zhj1214/qdjk-browser",
   "version": "0.0.4",
   "description": "A SDK For Monitoring Browser Errors",
   "author": "zhj1214",
@@ -14,10 +14,10 @@
     "build": "sh ../../script/build-module.sh browser"
   },
   "dependencies": {
-    "@supaur/qdjk-utils": "^0.0.4",
-    "@supaur/qdjk-core": "^0.0.4",
-    "@supaur/qdjk-shared": "^0.0.x",
-    "@supaur/qdjk-types": "^0.0.x"
+    "@zhj1214/qdjk-utils": "^0.0.4",
+    "@zhj1214/qdjk-core": "^0.0.4",
+    "@zhj1214/qdjk-shared": "^0.0.x",
+    "@zhj1214/qdjk-types": "^0.0.x"
   },
   "buildOptions": {
     "formats": [

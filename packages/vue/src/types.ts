@@ -1,4 +1,4 @@
-import { IAnyObject } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { IAnyObject } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 export interface VueInstance {
   config?: VueConfiguration

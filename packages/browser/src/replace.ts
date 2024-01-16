@@ -8,10 +8,10 @@ import {
   isExistProperty,
   variableTypeDetection,
   supportsHistory
-} from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { transportData, options, setTraceId, triggerHandlers, ReplaceHandler, subscribeEvent } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { EMethods, MITOHttp, MITOXMLHttpRequest } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
-import { voidFun, EVENTTYPES, HTTPTYPE, HTTP_CODE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+} from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { transportData, options, setTraceId, triggerHandlers, ReplaceHandler, subscribeEvent } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { EMethods, MITOHttp, MITOXMLHttpRequest } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import { voidFun, EVENTTYPES, HTTPTYPE, HTTP_CODE } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 
 function isFilterHttpUrl(url: string) {
   return options.filterXhrUrlRegExp && options.filterXhrUrlRegExp.test(url)

@@ -1,5 +1,5 @@
 {
-  "name": "@supaur/qdjk-wx-mini",
+  "name": "@zhj1214/qdjk-wx-mini",
   "version": "0.0.4",
   "description": "A SDK For Monitoring wx-mini Errors",
   "author": "zhj1214",
@@ -14,10 +14,10 @@
     "build": "sh ../../script/build-module.sh wx-mini"
   },
   "dependencies": {
-    "@supaur/qdjk-core": "^0.0.4",
-    "@supaur/qdjk-utils": "^0.0.4",
-    "@supaur/qdjk-shared": "^0.0.x",
-    "@supaur/qdjk-types": "^0.0.x",
+    "@zhj1214/qdjk-core": "^0.0.4",
+    "@zhj1214/qdjk-utils": "^0.0.4",
+    "@zhj1214/qdjk-shared": "^0.0.x",
+    "@zhj1214/qdjk-types": "^0.0.x",
     "@types/wechat-miniprogram": "^3.1.0"
   }
 }

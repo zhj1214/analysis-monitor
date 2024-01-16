@@ -1,5 +1,5 @@
-import { options, setTraceId } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { _support } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
+import { options, setTraceId } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { _support } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
 
 describe('options.ts', () => {
   it('should setTraceId func work', () => {

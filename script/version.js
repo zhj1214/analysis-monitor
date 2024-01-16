@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const { getArgv, targets: allTargets, binRun, getPkgRoot, step, errLog } = require('./utils')
-const MITO_PREFIX = '@supaur/qdjk'
+const MITO_PREFIX = '@zhj1214/qdjk'
 let beModifiedPackages = []
 
 run()

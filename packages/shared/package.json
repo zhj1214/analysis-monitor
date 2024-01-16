@@ -1,7 +1,7 @@
 {
-  "name": "@supaur/qdjk-shared",
-  "version": "0.0.3",
-  "description": "@supaur/qdjk-shared",
+  "name": "@zhj1214/qdjk-shared",
+  "version": "0.0.1",
+  "description": "@zhj1214/qdjk-shared",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/shared.js",

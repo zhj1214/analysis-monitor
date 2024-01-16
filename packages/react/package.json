@@ -1,5 +1,5 @@
 {
-  "name": "@supaur/qdjk-react",
+  "name": "@zhj1214/qdjk-react",
   "version": "0.0.4",
   "description": "A SDK For Report React ErrorBoundary",
   "author": "zhj1214",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh react"
   },
   "dependencies": {
-    "@supaur/qdjk-core": "^0.0.4",
-    "@supaur/qdjk-utils": "^0.0.4",
-    "@supaur/qdjk-shared": "^0.0.x"
+    "@zhj1214/qdjk-core": "^0.0.4",
+    "@zhj1214/qdjk-utils": "^0.0.4",
+    "@zhj1214/qdjk-shared": "^0.0.x"
   }
 }

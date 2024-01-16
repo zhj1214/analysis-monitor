@@ -1,7 +1,7 @@
 {
-  "name": "@supaur/qdjk-utils",
+  "name": "@zhj1214/qdjk-utils",
   "version": "0.0.4",
-  "description": "@supaur/qdjk-utils",
+  "description": "@zhj1214/qdjk-utils",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/utils.js",
@@ -14,7 +14,7 @@
     "build": "sh ../../script/build-module.sh utils"
   },
   "dependencies": {
-    "@supaur/qdjk-shared": "^0.0.x",
-    "@supaur/qdjk-types": "^0.0.x"
+    "@zhj1214/qdjk-shared": "^0.0.x",
+    "@zhj1214/qdjk-types": "^0.0.x"
   }
 }

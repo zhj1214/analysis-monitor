@@ -1,5 +1,5 @@
-import { extractErrorStack, htmlElementAsString, parseUrlToObj } from '@supaur/qdjk-utils' // '@supaur/qdjk-utils'
-import { Severity } from '@supaur/qdjk-types'
+import { extractErrorStack, htmlElementAsString, parseUrlToObj } from '@zhj1214/qdjk-utils' // '@zhj1214/qdjk-utils'
+import { Severity } from '@zhj1214/qdjk-types'
 
 describe('browser.ts', () => {
   describe('htmlElementAsString function', () => {

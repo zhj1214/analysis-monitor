@@ -1,6 +1,6 @@
-import { ERRORTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
-import { createErrorId, getFlutterRealOrigin, getFlutterRealPath, getRealPageOrigin, getRealPath } from '@supaur/qdjk-core' // '@supaur/qdjk-core'
-import { ReportDataType, Severity } from '@supaur/qdjk-types' // '@supaur/qdjk-types'
+import { ERRORTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
+import { createErrorId, getFlutterRealOrigin, getFlutterRealPath, getRealPageOrigin, getRealPath } from '@zhj1214/qdjk-core' // '@zhj1214/qdjk-core'
+import { ReportDataType, Severity } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 
 describe('errorId.ts', () => {
   const apikey = '13213-1231-1231'

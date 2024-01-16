@@ -1,9 +1,9 @@
 import { Severity } from './severity'
-import { BREADCRUMBTYPES } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { BREADCRUMBTYPES } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { ReportDataType } from './transportData'
 import { Replace } from './replace'
 import { TNumStrObj } from './common'
-import { InitOptions } from './options' // '@supaur/qdjk-types'
+import { InitOptions } from './options' // '@zhj1214/qdjk-types'
 
 export interface BreadcrumbPushData {
   /**

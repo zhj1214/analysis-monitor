@@ -1,4 +1,4 @@
-import { voidFun } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { voidFun } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 
 /**
  * 原生try函数

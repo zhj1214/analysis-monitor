@@ -1,5 +1,5 @@
 {
-  "name": "@supaur/qdjk-web",
+  "name": "@zhj1214/qdjk-web",
   "version": "0.0.5",
   "description": "A SDK For Monitoring Web(React、Vue) Errors",
   "author": "zhj1214(https://github.com/)",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh vue"
   },
   "dependencies": {
-    "@supaur/qdjk-browser": "^0.0.x",
-    "@supaur/qdjk-react": "^0.0.x",
-    "@supaur/qdjk-vue": "^0.0.4"
+    "@zhj1214/qdjk-browser": "^0.0.x",
+    "@zhj1214/qdjk-react": "^0.0.x",
+    "@zhj1214/qdjk-vue": "^0.0.4"
   }
 }

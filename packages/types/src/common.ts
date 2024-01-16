@@ -1,4 +1,4 @@
-import { HTTPTYPE } from '@supaur/qdjk-shared' // '@supaur/qdjk-shared'
+import { HTTPTYPE } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 
 export interface IAnyObject {
   [key: string]: any
