@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * Why not First Meaningful Paint (FMP)
  * In the past we've recommended performance metrics like First Meaningful Paint (FMP) and Speed Index (SI) (both available
  * in Lighthouse) to help capture more of the loading experience after the initial paint,

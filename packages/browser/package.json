@@ -1,7 +1,7 @@
 {
   "name": "@zhj1214/qdjk-browser",
   "version": "0.0.4",
-  "description": "A SDK For Monitoring Browser Errors",
+  "description": "A SDK For Browser Errors",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/browser.js",

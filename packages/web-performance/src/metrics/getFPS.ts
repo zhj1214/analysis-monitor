@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * FPS
  * fps,a frame rate is the speed at which the browser is able to recalculate, layout and paint content to the display.
  * */

@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * First Contentful Paint (FCP) is when the browser renders the first bit of content from the DOM,
  * providing the first feedback to the user that the page is actually loading(https://developer.mozilla.org/en-US/docs/Glossary/First_contentful_paint)
  * */

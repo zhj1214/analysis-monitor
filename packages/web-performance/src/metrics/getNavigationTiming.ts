@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * Page loads waterfall stream
  * dns lookup = domainLookupEnd - domainLookupStart
  * initial connection = connectEnd - connectStart

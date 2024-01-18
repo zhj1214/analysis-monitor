@@ -1,8 +1,8 @@
 /**
- * Performance monitoring entry
+ * Performance entry
  *
  * @class
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * */
 import 'core-js/es/array/includes'
 import 'core-js/es/object/values'

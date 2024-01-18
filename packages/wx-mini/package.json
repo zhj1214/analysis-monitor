@@ -1,7 +1,7 @@
 {
   "name": "@zhj1214/qdjk-wx-mini",
   "version": "0.0.4",
-  "description": "A SDK For Monitoring wx-mini Errors",
+  "description": "A SDK For wx-mini Errors",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/wx-mini.js",

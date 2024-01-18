@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * Cumulative Layout Shift
  * Have you ever been reading an article online when something suddenly changes on the page?
  * Without warning, the text moves, and you've lost your place.

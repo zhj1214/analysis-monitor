@@ -1,7 +1,7 @@
 {
   "name": "@zhj1214/qdjk-vue",
   "version": "0.0.4",
-  "description": "A SDK for monitoring Vue errors",
+  "description": "A SDK for Vue errors",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/vue.js",

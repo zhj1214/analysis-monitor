@@ -2,7 +2,7 @@
   "name": "@zhj1214/qdjk-web-performance",
   "version": "0.0.3",
   "description": "A SDK For Report Web Performance",
-  "author": "allen(https://github.com/Chryseis)",
+  "author": "allen",
   "license": "MIT",
   "main": "dist/web-performance.js",
   "module": "dist/web-performance.esm.js",

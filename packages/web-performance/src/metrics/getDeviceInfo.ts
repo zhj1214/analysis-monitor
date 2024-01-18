@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * Device Info
  * deviceMemory,the deviceMemory read-only property of the Navigator interface returns the approximate amount of device memory in gigabytes.
  * hardwareConcurrency,the navigator.hardwareConcurrency read-only property returns the number of logical processors available to run threads on the user's computer.

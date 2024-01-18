@@ -1,3 +1,6 @@
+# 前端监听错误SDK
+> 此项目通过调研网上方案并参照一些商用案例开发
+
 ## 功能
 - [x] 🔨监听请求错误
 - [x] 🔨console
@@ -16,8 +19,10 @@
 - [x] 支持原生微信小程序、支持uni-app等微信小程序框架 [@zhj1214/qdjk-wx-mini]
 - [x] 支持Web性能监控 [@zhj1214/qdjk-web-performance]
 - [x] 支持微信小程序性能监控 [@zhj1214/qdjk-wx-mini-performance]
+
 ## 依赖关系
 ![Alt text](QDJK.jpg)
+
 ## 升级步骤
 1. 修改的子包`(shared)`的内容以后，先进入`cd到shared子包的目录下`，在执行`yarn build`这个命令会单独打包这个子模块
 2. 在发布`(shared)`npm publish

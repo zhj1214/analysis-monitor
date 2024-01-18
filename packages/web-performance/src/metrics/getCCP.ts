@@ -1,5 +1,5 @@
 /**
- * @author allen(https://github.com/Chryseis)
+ * @author allen
  * CCP
  * The Custom Contentful Paint (CCP) metric reports the render time of page remote api end,
  * relative to when the page first started loading.
