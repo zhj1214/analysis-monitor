@@ -2,7 +2,16 @@ import { _support, validateOption, logger, isBrowserEnv, isWxMiniEnv, variableTy
 import { createErrorId } from './errorId'
 import { SDK_NAME, SDK_VERSION } from '@zhj1214/qdjk-shared' // '@zhj1214/qdjk-shared'
 import { breadcrumb } from './breadcrumb'
-import { AuthInfo, TransportDataType, EMethods, InitOptions, isReportDataType, DeviceInfo, FinalReportType } from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
+import {
+  AuthInfo,
+  TransportDataType,
+  EMethods,
+  InitOptions,
+  isReportDataType,
+  DeviceInfo,
+  FinalReportType,
+  ReportDataType
+} from '@zhj1214/qdjk-types' // '@zhj1214/qdjk-types'
 /**
  * 用来传输数据类，包含img标签、xhr请求
  * 功能：支持img请求和xhr请求、可以断点续存（保存在localstorage），
@@ -22,6 +31,7 @@ export class TransportData {
   trackKey = ''
   errorDsn = ''
   trackDsn = ''
+  ignoreErrors = []
   constructor() {
     this.queue = new Queue()
   }
@@ -137,7 +147,7 @@ export class TransportData {
     }
     return isSdkDsn
   }
-
+  // 初始化配偶函数
   bindOptions(options: InitOptions = {}): void {
     // const {
     //   dsn,
@@ -156,6 +166,7 @@ export class TransportData {
     validateOption(options.dsn, 'dsn', 'string') && (this.errorDsn = options.dsn)
     validateOption(options.trackDsn, 'trackDsn', 'string') && (this.trackDsn = options.trackDsn)
     validateOption(options.useImgUpload, 'useImgUpload', 'boolean') && (this.useImgUpload = options.useImgUpload)
+    validateOption(options.ignoreErrors, 'ignoreErrors', 'object') && (this.ignoreErrors = options.ignoreErrors)
     validateOption(options.beforeDataReport, 'beforeDataReport', 'function') && (this.beforeDataReport = options.beforeDataReport)
     validateOption(options.configReportXhr, 'configReportXhr', 'function') && (this.configReportXhr = options.configReportXhr)
     validateOption(options.backTrackerId, 'backTrackerId', 'function') && (this.backTrackerId = options.backTrackerId)
@@ -183,6 +194,16 @@ export class TransportData {
         logger.error('trackDsn为空，没有传入埋点上报的dsn地址，请在init中传入')
         return
       }
+    }
+    // 先过滤掉不需要上传的错误,埋点信息(不包含 name)不用过滤
+    if (this.ignoreErrors && this.ignoreErrors.length > 0 && (data as ReportDataType).message) {
+      let isFilter = false
+      this.ignoreErrors.forEach((e) => {
+        if (typeof e == 'string' && (data as ReportDataType).message == e) {
+          isFilter = true
+        }
+      })
+      if (isFilter) return
     }
     // 对数据加工处理
     const result = await this.beforePost(data)

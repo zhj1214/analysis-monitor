@@ -36,7 +36,7 @@ export class Breadcrumb {
     this.stack.push(data)
     // make sure xhr fetch is behind button click
     this.stack.sort((a, b) => a.time - b.time)
-    logger.log(this.stack)
+    // logger.log(this.stack)
   }
   shift(): boolean {
     return this.stack.shift() !== undefined

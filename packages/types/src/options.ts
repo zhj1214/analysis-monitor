@@ -91,7 +91,7 @@ export interface InitOptions extends SilentEventTypes, HooksTypes, WxSilentEvent
   /**
    * 忽视某些错误不上传
    */
-  // ignoreErrors?: Array<string | RegExp>
+  ignoreErrors?: Array<string | RegExp>
   /**
    * 默认20，最大100，超过100还是设置成100
    */

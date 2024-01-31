@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "zhj1214",
   "scripts": {
-    "build:module": "rollup -c --environment TARGET:wx-mini,TYPES:true,LOCALDIR:undefined",
+    "build:module": "rollup -c --environment TARGET:types,TYPES:true,LOCALDIR:undefined",
     "build": "node script/build.js",
     "watch": "node script/build.js --watch=true",
     "version": "node script/version.js",
@@ -18,7 +18,10 @@
     "format": "prettier --write \"packages/**/*.ts?(x)\" && eslint --fix --ext .ts packages",
     "format:package": "prettier --write \"packages/**/package.json\"",
     "commit": "git add . && git cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
+    "preacp": "node scripts/buildTime.cjs;git add .",
+    "acp": "git commit -m",
+    "postacp": "git pull;git push;"
   },
   "keywords": [
     "mitojs",

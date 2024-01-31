@@ -638,7 +638,7 @@ function nativeTryCatch(fn, errorFn) {
   try {
     fn()
   } catch (err) {
-    console.log('err', err)
+    // console.log('err', err)
     if (errorFn) {
       errorFn(err)
     }
@@ -805,7 +805,7 @@ var Breadcrumb = (function () {
       this.shift()
     }
     this.stack.push(data)
-    logger.log(this.stack)
+    // logger.log(this.stack)
   }
   Breadcrumb.prototype.shift = function () {
     return this.stack.shift() !== undefined
@@ -2053,7 +2053,7 @@ function handleVueError(err, vm, info, level, breadcrumbLevel, Vue) {
     time: getTimestamp()
   }
   if (variableTypeDetection.isString(version)) {
-    console.log('getBigVersion', getBigVersion(version))
+    // console.log('getBigVersion', getBigVersion(version))
     switch (getBigVersion(version)) {
       case 2:
         data = __assign(__assign({}, data), vue2VmHandler(vm))
@@ -2093,7 +2093,7 @@ function vue3VmHandler(vm) {
   if (vm.$root === vm) {
     componentName = 'root'
   } else {
-    console.log(vm.$options)
+    // console.log(vm.$options)
     var name_2 = vm.$options && vm.$options.name
     componentName = name_2 ? 'component <' + name_2 + '>' : 'anonymous component'
   }
