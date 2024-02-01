@@ -1,10 +1,10 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "author": "zhj1214",
   "scripts": {
-    "build:module": "rollup -c --environment TARGET:types,TYPES:true,LOCALDIR:undefined",
+    "build:module": "rollup -c --environment TARGET:wx-mini-performance,TYPES:true,LOCALDIR:undefined",
     "build": "node script/build.js",
     "watch": "node script/build.js --watch=true",
     "version": "node script/version.js",
@@ -19,7 +19,7 @@
     "format:package": "prettier --write \"packages/**/package.json\"",
     "commit": "git add . && git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
-    "preacp": "node scripts/buildTime.cjs;git add .",
+    "preacp": "git add .",
     "acp": "git commit -m",
     "postacp": "git pull;git push;"
   },
@@ -80,13 +80,13 @@
   },
   "版本比较": "^1.2.3  <=>  >=1.2.3 <2.0.0、^0.2.3  <=>  >=0.2.3 <0.3.0、^0.0.3  <=>  >=0.0.3 <0.0.4、^1.2.x  <=>  >=1.2.0 <2.0.0、^0.0.x  <=>  >=0.0.0 <0.1.0",
   "dependencies": {
-    "@zhj1214/qdjk-browser": "^0.0.x",
-    "@zhj1214/qdjk-core": "^0.0.4",
-    "@zhj1214/qdjk-react": "^0.0.x",
-    "@zhj1214/qdjk-shared": "^0.0.x",
-    "@zhj1214/qdjk-types": "^0.0.x",
-    "@zhj1214/qdjk-utils": "^0.0.4",
-    "@zhj1214/qdjk-vue": "^0.0.x",
+    "@zhj1214/qdjk-browser": "^0.0.1",
+    "@zhj1214/qdjk-core": "^0.0.1",
+    "@zhj1214/qdjk-react": "^0.0.1",
+    "@zhj1214/qdjk-shared": "^0.0.1",
+    "@zhj1214/qdjk-types": "^0.0.1",
+    "@zhj1214/qdjk-utils": "^0.0.1",
+    "@zhj1214/qdjk-vue": "^0.0.1",
     "core-js": "^3.19.1",
     "path-to-regexp": "^6.2.0"
   }

@@ -1,7 +1,7 @@
 {
-  "name": "@dh/qdjk-types",
-  "version": "0.0.1",
-  "description": "@dh/qdjk-types",
+  "name": "@zhj1214/qdjk-types",
+  "version": "0.0.8",
+  "description": "@zhj1214/qdjk-types",
   "author": "zhj1214",
   "license": "MIT",
   "main": "dist/types.js",
@@ -14,6 +14,6 @@
     "build": "sh ../../script/build-module.sh types"
   },
   "dependencies": {
-    "@zhj1214/qdjk-shared": "^0.0.x"
+    "@zhj1214/qdjk-shared": "^0.0.8"
   }
 }

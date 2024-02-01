@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-utils",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "@zhj1214/qdjk-utils",
   "author": "zhj1214",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "build": "sh ../../script/build-module.sh utils"
   },
   "dependencies": {
-    "@zhj1214/qdjk-shared": "^0.0.x",
-    "@zhj1214/qdjk-types": "^0.0.x"
+    "@zhj1214/qdjk-shared": "^0.0.8",
+    "@zhj1214/qdjk-types": "^0.0.8"
   }
 }

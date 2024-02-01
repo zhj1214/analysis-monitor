@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-react",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "A SDK For Report React ErrorBoundary",
   "author": "zhj1214",
   "license": "MIT",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh react"
   },
   "dependencies": {
-    "@zhj1214/qdjk-core": "^0.0.4",
-    "@zhj1214/qdjk-utils": "^0.0.4",
-    "@zhj1214/qdjk-shared": "^0.0.x"
+    "@zhj1214/qdjk-core": "^0.0.8",
+    "@zhj1214/qdjk-utils": "^0.0.8",
+    "@zhj1214/qdjk-shared": "^0.0.8"
   }
 }

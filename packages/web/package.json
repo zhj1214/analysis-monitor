@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-web",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "A SDK For Web(React、Vue) Errors",
   "author": "zhj1214(https://github.com/)",
   "license": "MIT",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh vue"
   },
   "dependencies": {
-    "@zhj1214/qdjk-browser": "^0.0.x",
-    "@zhj1214/qdjk-react": "^0.0.x",
-    "@zhj1214/qdjk-vue": "^0.0.4"
+    "@zhj1214/qdjk-browser": "^0.0.8",
+    "@zhj1214/qdjk-react": "^0.0.8",
+    "@zhj1214/qdjk-vue": "^0.0.8"
   }
 }

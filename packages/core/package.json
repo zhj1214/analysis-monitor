@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-core",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "@zhj1214/qdjk-core",
   "author": "zhj1214",
   "license": "MIT",
@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh core"
   },
   "dependencies": {
-    "@zhj1214/qdjk-types": "^0.0.x",
-    "@zhj1214/qdjk-utils": "^0.0.4",
-    "@zhj1214/qdjk-shared": "^0.0.x"
+    "@zhj1214/qdjk-types": "^0.0.8",
+    "@zhj1214/qdjk-utils": "^0.0.8",
+    "@zhj1214/qdjk-shared": "^0.0.8"
   }
 }
