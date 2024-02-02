@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-browser",
-  "version": "0.0.8",
+  "version": "0.1.2",
   "description": "A SDK For Browser Errors",
   "author": "zhj1214",
   "license": "MIT",
@@ -14,10 +14,10 @@
     "build": "sh ../../script/build-module.sh browser"
   },
   "dependencies": {
-    "@zhj1214/qdjk-utils": "^0.0.8",
-    "@zhj1214/qdjk-core": "^0.0.8",
-    "@zhj1214/qdjk-shared": "^0.0.8",
-    "@zhj1214/qdjk-types": "^0.0.8"
+    "@zhj1214/qdjk-utils": "0.1.2",
+    "@zhj1214/qdjk-core": "0.1.2",
+    "@zhj1214/qdjk-shared": "0.1.2",
+    "@zhj1214/qdjk-types": "0.1.2"
   },
   "buildOptions": {
     "formats": [

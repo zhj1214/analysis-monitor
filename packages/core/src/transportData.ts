@@ -22,6 +22,7 @@ import {
 export class TransportData {
   queue: Queue
   beforeDataReport: unknown = null
+  ignoreDynamic: unknown = null
   backTrackerId: unknown = null
   configReportXhr: unknown = null
   configReportUrl: unknown = null
@@ -167,6 +168,7 @@ export class TransportData {
     validateOption(options.trackDsn, 'trackDsn', 'string') && (this.trackDsn = options.trackDsn)
     validateOption(options.useImgUpload, 'useImgUpload', 'boolean') && (this.useImgUpload = options.useImgUpload)
     validateOption(options.ignoreErrors, 'ignoreErrors', 'object') && (this.ignoreErrors = options.ignoreErrors)
+    validateOption(options.ignoreDynamic, 'ignoreDynamic', 'function') && (this.ignoreDynamic = options.ignoreDynamic)
     validateOption(options.beforeDataReport, 'beforeDataReport', 'function') && (this.beforeDataReport = options.beforeDataReport)
     validateOption(options.configReportXhr, 'configReportXhr', 'function') && (this.configReportXhr = options.configReportXhr)
     validateOption(options.backTrackerId, 'backTrackerId', 'function') && (this.backTrackerId = options.backTrackerId)
@@ -196,6 +198,9 @@ export class TransportData {
       }
     }
     // 先过滤掉不需要上传的错误,埋点信息(不包含 name)不用过滤
+    if (typeof this.ignoreDynamic === 'function') {
+      this.ignoreErrors = await this.ignoreDynamic(this.ignoreErrors) // 获取动态添加额外的过滤信息
+    }
     if (this.ignoreErrors && this.ignoreErrors.length > 0 && (data as ReportDataType).message) {
       let isFilter = false
       this.ignoreErrors.forEach((e) => {

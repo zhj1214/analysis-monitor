@@ -164,6 +164,11 @@ export interface HooksTypes {
    * trackerId表示用户唯一键（可以理解成userId），需要trackerId的意义可以区分每个错误影响的用户数量
    */
   backTrackerId?(): string | number
+  /**
+   * 钩子函数，动态获取需要额外过滤的信息
+   * ../returns 如果返回 null | undefined | boolean 时，将忽略本次上传
+   */
+  ignoreDynamic?(ignores: any): Promise<any | CANCEL> | any | CANCEL
 }
 
 export interface SilentEventTypes {

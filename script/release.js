@@ -59,10 +59,10 @@ async function publicPackage(pkgName) {
       //   stdio: 'pipe'
       // })
       // zhj1214 自己的仓库
-      await binRun('npm', ['publish', '--registry', 'https://registry.npmjs.org'], {
-        cwd: pkgRoot,
-        stdio: 'pipe'
-      })
+      // await binRun('npm', ['publish', '--new-version', version, '--access', 'public', '--registry', 'https://registry.npmjs.org'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
       console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
     } catch (error) {
       console.log(`failed publish ${pkgName}@${version}`, error)
