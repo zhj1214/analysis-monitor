@@ -1,6 +1,6 @@
 {
   "name": "@zhj1214/qdjk-vue",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A SDK for Vue errors",
   "author": "zhj1214",
   "license": "MIT",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@zhj1214/qdjk-core": "0.1.2",
-    "@zhj1214/qdjk-utils": "0.1.2",
     "@zhj1214/qdjk-shared": "0.1.2",
-    "@zhj1214/qdjk-types": "0.1.2"
+    "@zhj1214/qdjk-types": "0.1.2",
+    "@zhj1214/qdjk-utils": "0.1.2"
   }
 }
