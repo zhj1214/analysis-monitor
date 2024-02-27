@@ -204,7 +204,16 @@ export class TransportData {
     if (this.ignoreErrors && this.ignoreErrors.length > 0 && (data as ReportDataType).message) {
       let isFilter = false
       this.ignoreErrors.forEach((e) => {
-        if (typeof e == 'string' && (data as ReportDataType).message == e) {
+        // 正则
+        if (e.includes('RegExp:')) {
+          let reg = e.replace('RegExp:', '')
+          reg = new RegExp(reg)
+          if (reg.test((data as ReportDataType).message)) {
+            isFilter = true
+          }
+        }
+        // 字符串绝对匹配
+        else if (typeof e == 'string' && (data as ReportDataType).message == e) {
           isFilter = true
         }
       })

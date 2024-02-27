@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@types/wechat-miniprogram": "^3.1.0",
-    "@zhj1214/qdjk-core": "0.1.3",
-    "@zhj1214/qdjk-shared": "0.1.3",
-    "@zhj1214/qdjk-types": "0.1.3",
-    "@zhj1214/qdjk-utils": "0.1.3"
+    "@zhj1214/qdjk-core": "0.1.4",
+    "@zhj1214/qdjk-shared": "0.1.4",
+    "@zhj1214/qdjk-types": "0.1.4",
+    "@zhj1214/qdjk-utils": "0.1.4"
   }
 }

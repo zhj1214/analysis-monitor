@@ -48,11 +48,7 @@ async function publicPackage(pkgName) {
       //   cwd: pkgRoot,
       //   stdio: 'pipe'
       // })
-      // // 先升级一个版本（没有使用）
-      // await binRun('npm', ['version', 'patch'], {
-      //   cwd: pkgRoot,
-      //   stdio: 'pipe'
-      // })
+
       // supaur registry
       // await binRun('npm', ['publish', '--registry', 'http://npm.supaur.top'], {
       //   cwd: pkgRoot,
@@ -63,6 +59,21 @@ async function publicPackage(pkgName) {
       //   cwd: pkgRoot,
       //   stdio: 'pipe'
       // })
+      
+      // 东合私服
+      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://35.234.13.143:4873/'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
+      // 先升级一个版本（没有使用）
+      // await binRun('yarn', ['version', '--patch'], {
+      //   cwd: pkgRoot,
+      //   stdio: 'pipe'
+      // })
+      await binRun('yarn', ['publish', '--registry', 'http://35.234.13.143:4873/'], {
+        cwd: pkgRoot,
+        stdio: 'pipe'
+      })
       console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
     } catch (error) {
       console.log(`failed publish ${pkgName}@${version}`, error)

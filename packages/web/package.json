@@ -14,8 +14,8 @@
     "build": "sh ../../script/build-module.sh vue"
   },
   "dependencies": {
-    "@zhj1214/qdjk-browser": "0.1.3",
-    "@zhj1214/qdjk-react": "0.1.3",
-    "@zhj1214/qdjk-vue": "0.1.3"
+    "@zhj1214/qdjk-browser": "0.1.4",
+    "@zhj1214/qdjk-react": "0.1.4",
+    "@zhj1214/qdjk-vue": "0.1.4"
   }
 }
