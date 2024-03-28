@@ -38,42 +38,26 @@ async function publicPackage(pkgName) {
     }
     step(`Publishing ${pkgName}...`)
     try {
-      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'https://registry.npmjs.org'], {
-      //   cwd: pkgRoot,
-      //   stdio: 'pipe'
-      // })
       // console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
-      // // personal registry
-      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://npmreg.qa.91jkys.com'], {
+
+      // zhj1214 自己的仓库: 先执行 npm login 在执行这个脚本
+      await binRun('npm', ['publish', '--registry', 'https://registry.npmjs.org'], {
+        cwd: pkgRoot,
+        stdio: 'pipe'
+      })
+
+      // 东合私服
+      // await binRun('yarn', ['publish', '--registry', 'http://35.234.13.143:4873/'], {
       //   cwd: pkgRoot,
       //   stdio: 'pipe'
       // })
 
-      // supaur registry
-      // await binRun('npm', ['publish', '--registry', 'http://npm.supaur.top'], {
-      //   cwd: pkgRoot,
-      //   stdio: 'pipe'
-      // })
-      // zhj1214 自己的仓库
-      // await binRun('npm', ['publish', '--new-version', version, '--access', 'public', '--registry', 'https://registry.npmjs.org'], {
-      //   cwd: pkgRoot,
-      //   stdio: 'pipe'
-      // })
-      
-      // 东合私服
-      // await binRun('yarn', ['publish', '--new-version', version, '--access', 'public', '--registry', 'http://35.234.13.143:4873/'], {
-      //   cwd: pkgRoot,
-      //   stdio: 'pipe'
-      // })
       // 先升级一个版本（没有使用）
       // await binRun('yarn', ['version', '--patch'], {
       //   cwd: pkgRoot,
       //   stdio: 'pipe'
       // })
-      await binRun('yarn', ['publish', '--registry', 'http://35.234.13.143:4873/'], {
-        cwd: pkgRoot,
-        stdio: 'pipe'
-      })
+
       console.log(chalk.green(`Successfully published ${pkgName}@${version}`))
     } catch (error) {
       console.log(`failed publish ${pkgName}@${version}`, error)
